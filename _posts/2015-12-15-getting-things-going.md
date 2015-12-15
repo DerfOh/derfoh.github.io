@@ -2,7 +2,7 @@
 layout: post
 title: "Getting Things Going"
 categories: check-in
-date: 2015-12-15 01:56:56
+date: 2015-12-15 01:56:56 -0500
 
 ---
 
