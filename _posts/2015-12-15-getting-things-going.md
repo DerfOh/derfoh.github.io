@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Things Going
-categories: [check-in]
-tags: [sublime],[pluggins],[jeckyll]
+categories: check-in
+tags: "sublime","pluggins","jeckyll"
 published: True
 
 ---
