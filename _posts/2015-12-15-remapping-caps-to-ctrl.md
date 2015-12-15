@@ -4,7 +4,7 @@ title: Remapping Caps to CTRL
 categories: tips
 tags: keymapping
 published: True
-date: 2015-12-15
+date: 2015-12-15 12:29:38
 ---
 
 Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
