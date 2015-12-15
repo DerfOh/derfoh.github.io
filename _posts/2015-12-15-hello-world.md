@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World!"
-date:   2015-12-15 01:18:29 -0500
+date:   2015-12-15
 categories: check-in
 ---
 
