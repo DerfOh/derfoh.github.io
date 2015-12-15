@@ -1,3 +1,4 @@
 ---
-permalink: derfoh.github.io/GadgetSearch/
+title: GadgetSearch
+permalink: /GadgetSearch/
 ---
