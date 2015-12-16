@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fred&#39;s Code Log</title>
+    <description>The personal encounters I have in my experiences as a programmer, and tinkerer.
+</description>
+    <link>http://derfoh.github.io/</link>
+    <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 16 Dec 2015 23:02:42 +0000</pubDate>
+    <lastBuildDate>Wed, 16 Dec 2015 23:02:42 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Archive page added!</title>
+        <description>&lt;p&gt;I found an easy way to implement an archive page into my Jekyll blog. Thanks to the author over at &lt;a href=&quot;http://reyhan.org&quot;&gt;reyhan.org&lt;/a&gt; I now have a simple archive page for the posts that I make to this log.&lt;/p&gt;
+
+&lt;p&gt;I had to add a file to my &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; directory called &lt;code class=&quot;highlighter-rouge&quot;&gt;archive.html&lt;/code&gt; that had the code from &lt;a href=&quot;http://reyhan.org/2013/03/jekyll-archive-without-plugins.html&quot;&gt;this site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then I added the archive.md so that the link would show up in the header. Next up I will be setting up analytics, and making it so that the front page is only limited to 5 posts.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 17:24:50 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</guid>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Remapping Caps to CTRL</title>
+        <description>&lt;p&gt;Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
+Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$hexified = &quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;.Split(&#39;,&#39;) | % { &quot;0x$_&quot;}
+$kbLayout = &#39;HKLM:\System\CurrentControlSet\Control\Keyboard Layout&#39;
+New-ItemProperty -Path $kbLayout -Name &quot;Scancode Map&quot; -PropertyType Binary -Value ([byte[]]$hexified)&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 12:29:38 +0000</pubDate>
+        <link>http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</guid>
+        
+        <category>keymapping</category>
+        
+        
+        <category>tips</category>
+        
+      </item>
+    
+      <item>
+        <title>Getting Things Going</title>
+        <description>&lt;p&gt;I got most of the config worked out for this site. Jekyll has been an interesting experience getting set up. I also had to figure out how to set up the default config for a very useful sublime pluggin. Its worth checking out if you use Sublime text as your editor. It is called: &lt;a href=&quot;https://packagecontrol.io/packages/Jekyll&quot;&gt;sublime-Jekyll&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 03:31:06 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</guid>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello World!</title>
+        <description>&lt;p&gt;Hello! This is my first post to my code blog.&lt;/p&gt;
+
+&lt;p&gt;Setting up this blog with Jekyll was somewhat difficult overall it took me a few hours to figure out that I was missing half of the files I needed for this to work.&lt;/p&gt;
+
+&lt;p&gt;With a little help from a lot of googling though I finally think I have the basics down and at least now I can make posts. YAY!!!&lt;/p&gt;
+
+&lt;p&gt;Next up is getting this thing themed.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 02:30:21 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/15/hello-world.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/hello-world.html</guid>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 14 Dec 2015 17:33:09 +0000</pubDate>
+        <link>http://derfoh.github.io/jekyll/update/2015/12/14/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/jekyll/update/2015/12/14/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
