@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: gray;
+  color: white;
   background-color: #000000;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -95,10 +95,13 @@ code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #eef; }
+  background-color: #eef; 
+  color: black;
+  }
 
 code {
-  padding: 1px 5px; }
+  padding: 1px 5px; 
+  color: black;}
 
 pre {
   padding: 8px 12px;
@@ -159,10 +162,9 @@ pre {
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
-  color: #66CCFF; }
+  float: left; }
   .site-title, .site-title:visited {
-    color: #66CCFF; }
+    }
 
 .site-nav {
   float: right;
