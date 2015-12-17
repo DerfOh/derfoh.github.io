@@ -23,8 +23,4 @@ timezone: America/New_York
 
 # Build settings
 markdown: kramdown
-kramdown:
-  enable_coderay: true
-  coderay:
-    coderay_line_numbers: inline
-    coderay_css: custom/coderay_twilight
+
