@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Remapping Caps to CTRL</title>
-  <meta name="description" content="Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.Simply open powershell as an administrator and run t...">
+  <title>VB Table Lookup</title>
+  <meta name="description" content="In my time  as a tutor I found that students struggled a lot with the concept of stepping through a multidemensional array. The concept of a table lookup is ...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html">
+  <link rel="canonical" href="http://derfoh.github.io/2015/12/17/vb-table-lookup.html">
   <link rel="alternate" type="application/rss+xml" title="Fred's Code Log" href="http://derfoh.github.io/feed.xml">
 
   <script>
@@ -80,19 +80,72 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Remapping Caps to CTRL</h1>
-    <p class="post-meta"><time datetime="2015-12-15T12:29:38+00:00" itemprop="datePublished">Dec 15, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">VB Table Lookup</h1>
+    <p class="post-meta"><time datetime="2015-12-17T19:00:53+00:00" itemprop="datePublished">Dec 17, 2015</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
-Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.</p>
+    <p>In my time  as a tutor I found that students struggled a lot with the concept of stepping through a multidemensional array. The concept of a table lookup is not necessarily the hardest thing to figure out but at the same time it takes a bit of thinking on the part of the programmer to conceptualize the logic behind it.
+So the table looks somewhat like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nv">$hexified</span> <span class="o">=</span> <span class="s2">"00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00"</span>.Split<span class="o">(</span><span class="s1">','</span><span class="o">)</span> | % <span class="o">{</span> <span class="s2">"0x</span><span class="nv">$_</span><span class="s2">"</span><span class="o">}</span>
-<span class="nv">$kbLayout</span> <span class="o">=</span> <span class="s1">'HKLM:\System\CurrentControlSet\Control\Keyboard Layout'</span>
-<span class="nb">New-ItemProperty</span> -Path <span class="nv">$kbLayout</span> -Name <span class="s2">"Scancode Map"</span> -PropertyType Binary -Value <span class="o">([</span><span class="kt">byte</span><span class="o">[]]</span><span class="nv">$hexified</span><span class="o">)</span>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Our Part</th>
+      <th style="text-align: right">Brand A</th>
+      <th style="text-align: right">Brand B</th>
+      <th style="text-align: right">Brand C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Our Part  1</td>
+      <td style="text-align: right">A1</td>
+      <td style="text-align: right">B1</td>
+      <td style="text-align: right">C1</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Our Part  2</td>
+      <td style="text-align: right">A2</td>
+      <td style="text-align: right">B2</td>
+      <td style="text-align: right">C2</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Our Part  3</td>
+      <td style="text-align: right">A3</td>
+      <td style="text-align: right">B13</td>
+      <td style="text-align: right">C3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<p>In the case of this class the particular requirement of one of the applications the students make is that it has to go through an array of different parts made by different brands and it has to match that part up with the name of the part at the company. This lesson is a great way to introduce the capabilities of arrays as well as loops. I have also found that it is  a great way to introduce a student to Visual Studio’s debugger.</p>
+
+<p>So the real meat is the code that steps through this array:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">For</span> <span class="n">columninteger</span> <span class="ow">As</span> <span class="kt">Integer</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">To</span> <span class="n">numberOfColumns</span>    <span class="c1">'steps through every row, this value can be changed to fit your needs.</span>
+	<span class="k">For</span> <span class="n">rowinteger</span> <span class="ow">As</span> <span class="kt">Integer</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">To</span> <span class="n">numberOfRows</span>   <span class="c1">'steps through every column, this value can be changed to fit your needs.</span>
+		<span class="k">If</span> <span class="n">partsnumberstring</span><span class="p">(</span><span class="n">columninteger</span><span class="p">,</span> <span class="n">rowinteger</span><span class="p">)</span> <span class="o">=</span> <span class="n">PartsTextBox</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">ToUpper</span> <span class="k">Then</span>
+		<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"Found part: "</span> <span class="o">+</span> <span class="n">partsnumberstring</span><span class="p">(</span><span class="n">columninteger</span><span class="p">,</span> <span class="n">rowinteger</span><span class="p">)</span> <span class="o">+</span> <span class="s">"   --   Our Part: "</span> <span class="o">+</span> <span class="n">partsnumberstring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">columninteger</span><span class="p">))</span> <span class="c1">'if the string matches put out the value in the first column</span>
+		<span class="k">End</span> <span class="k">If</span>
+	<span class="k">Next</span>
+<span class="k">Next</span>
 </code></pre>
 </div>
+
+<p>What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company’s part that matches it.</p>
 
   </div>
 
