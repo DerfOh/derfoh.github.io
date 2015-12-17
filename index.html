@@ -13,11 +13,13 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.content | strip_html | truncatewords:10}}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
+
+  <a href ="/archive/" >More Posts</a>
   </td>
 
   <td width="50%">
