@@ -321,8 +321,8 @@ pre {
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
-  color: black; }
+  /*     background: #fff;
+      color: black; */ }
   .highlighter-rouge .highlight {
     background: #eef; }
   .highlight .c {
