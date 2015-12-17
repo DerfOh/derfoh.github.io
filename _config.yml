@@ -23,7 +23,8 @@ timezone: America/New_York
 
 # Build settings
 markdown: kramdown
-syntax-highlighting:
-  enabled : true
-  css: main.css
-
+kramdown:
+  enable_coderay: true
+  coderay:
+    coderay_line_numbers: inline
+    coderay_css: class
