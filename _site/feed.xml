@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 00:09:23 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 00:09:23 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 00:11:38 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 00:11:38 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -32,7 +32,8 @@
         <description>&lt;p&gt;Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
 Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-gp&quot; data-lang=&quot;gp&quot;&gt;$hexified = &quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;.Split(&#39;,&#39;) | % { &quot;0x$_&quot;}
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-gp&quot; data-lang=&quot;gp&quot;&gt; 
+$hexified = &quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;.Split(&#39;,&#39;) | % { &quot;0x$_&quot;}
 $kbLayout = &#39;HKLM:\System\CurrentControlSet\Control\Keyboard Layout&#39;
 New-ItemProperty -Path $kbLayout -Name &quot;Scancode Map&quot; -PropertyType Binary -Value ([byte[]]$hexified)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
