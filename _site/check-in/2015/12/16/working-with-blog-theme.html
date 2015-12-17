@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Remapping Caps to CTRL</title>
-  <meta name="description" content="Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.Simply open powershell as an administrator and run t...">
+  <title>Working with blog theme</title>
+  <meta name="description" content="I had a heck of a time figuring out how to theme jekyll. You’d think there would be just one css file to edit but you would be very wrong. Aparently themes f...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html">
+  <link rel="canonical" href="http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html">
   <link rel="alternate" type="application/rss+xml" title="Fred's Code Log" href="http://derfoh.github.io/feed.xml">
 
   <script>
@@ -76,19 +76,18 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Remapping Caps to CTRL</h1>
-    <p class="post-meta"><time datetime="2015-12-15T12:29:38+00:00" itemprop="datePublished">Dec 15, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">Working with blog theme</h1>
+    <p class="post-meta"><time datetime="2015-12-16T19:43:53+00:00" itemprop="datePublished">Dec 16, 2015</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
-Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.</p>
+    <p>I had a heck of a time figuring out how to theme jekyll. You’d think there would be just one css file to edit but you would be very wrong. Aparently themes for Jekyll are an issue and are not very consistent in their implementation. Furthermore the things you might be seeing as local changes when builing the site locally do not show up on github’s build of the site. I wasn’t aware that build errors get sent to your email so it was good that I learned that. Something as simple as changing the font color in the highlighted fields has proven to be very difficult however. It even took me a bit to figure out how to get the title of the blog to a different color. I perservered though in at least changing the color of the site’s title.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$hexified = "00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00".Split(',') | % { "0x$_"}
-$kbLayout = 'HKLM:\System\CurrentControlSet\Control\Keyboard Layout'
-New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Value ([byte[]]$hexified)
-</code></pre>
-</div>
+<p>It seems that the file I need to edit in my directory is in the <code class="highlighter-rouge">_sass</code> folder, the themes then seem to be laid out in a similar fashion to a regular css file but it looks like there are variables that can be set in the <code class="highlighter-rouge">css\main.scss</code> file. This has been my first encounter with Sass files and find it intreguiing that you can use CSS in this way. There are a few more tweaks I’d like to do You can find more about this language at http://sass-lang.com/</p>
+
+<p>I also found a great resource for the type of markdown my Jekyll implementation is using (called kramdown) at http://kramdown.gettalong.org/syntax.html</p>
+
+<p>Now that I have the site looking mostly how I want it to I am going to be working towards making more posts about the projects that I have currently on GitHub and go over their purpose, and if I expect to expand upon them.</p>
 
   </div>
 

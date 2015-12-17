@@ -6,9 +6,30 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 00:11:38 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 00:11:38 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 01:08:32 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 01:08:32 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Working with blog theme</title>
+        <description>&lt;p&gt;I had a heck of a time figuring out how to theme jekyll. You’d think there would be just one css file to edit but you would be very wrong. Aparently themes for Jekyll are an issue and are not very consistent in their implementation. Furthermore the things you might be seeing as local changes when builing the site locally do not show up on github’s build of the site. I wasn’t aware that build errors get sent to your email so it was good that I learned that. Something as simple as changing the font color in the highlighted fields has proven to be very difficult however. It even took me a bit to figure out how to get the title of the blog to a different color. I perservered though in at least changing the color of the site’s title.&lt;/p&gt;
+
+&lt;p&gt;It seems that the file I need to edit in my directory is in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass&lt;/code&gt; folder, the themes then seem to be laid out in a similar fashion to a regular css file but it looks like there are variables that can be set in the &lt;code class=&quot;highlighter-rouge&quot;&gt;css\main.scss&lt;/code&gt; file. This has been my first encounter with Sass files and find it intreguiing that you can use CSS in this way. There are a few more tweaks I’d like to do You can find more about this language at http://sass-lang.com/&lt;/p&gt;
+
+&lt;p&gt;I also found a great resource for the type of markdown my Jekyll implementation is using (called kramdown) at http://kramdown.gettalong.org/syntax.html&lt;/p&gt;
+
+&lt;p&gt;Now that I have the site looking mostly how I want it to I am going to be working towards making more posts about the projects that I have currently on GitHub and go over their purpose, and if I expect to expand upon them.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 19:43:53 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</guid>
+        
+        <category>themeing</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
     
       <item>
         <title>Archive page added!</title>
@@ -32,10 +53,11 @@
         <description>&lt;p&gt;Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
 Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-gp&quot; data-lang=&quot;gp&quot;&gt; 
-$hexified = &quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;.Split(&#39;,&#39;) | % { &quot;0x$_&quot;}
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$hexified = &quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;.Split(&#39;,&#39;) | % { &quot;0x$_&quot;}
 $kbLayout = &#39;HKLM:\System\CurrentControlSet\Control\Keyboard Layout&#39;
-New-ItemProperty -Path $kbLayout -Name &quot;Scancode Map&quot; -PropertyType Binary -Value ([byte[]]$hexified)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+New-ItemProperty -Path $kbLayout -Name &quot;Scancode Map&quot; -PropertyType Binary -Value ([byte[]]$hexified)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Tue, 15 Dec 2015 12:29:38 +0000</pubDate>
         <link>http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</link>
