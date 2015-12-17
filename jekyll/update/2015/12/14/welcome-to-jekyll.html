@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>VB Table Lookup</title>
-  <meta name="description" content="In my time  as a tutor I found that students struggled a lot with the concept of stepping through a multidemensional array. The concept of a table lookup is ...">
+  <title>Welcome to Jekyll!</title>
+  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/tips/2015/12/17/vb-table-lookup.html">
+  <link rel="canonical" href="http://derfoh.github.io/jekyll/update/2015/12/14/welcome-to-jekyll.html">
   <link rel="alternate" type="application/rss+xml" title="Fred's Code Log" href="http://derfoh.github.io/feed.xml">
 
   <script>
@@ -46,7 +46,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/gadgetsearch/">GadgetSearch</a>
+          <a class="page-link" href="/GadgetSearch/">GadgetSearch</a>
           
         
           
@@ -55,10 +55,6 @@
         
           
           <a class="page-link" href="/archive/">Archive</a>
-          
-        
-          
-          <a class="page-link" href="/codestats/">Languages and Stats</a>
           
         
           
@@ -80,71 +76,25 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">VB Table Lookup</h1>
-    <p class="post-meta"><time datetime="2015-12-17T00:00:00+00:00" itemprop="datePublished">Dec 17, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">Welcome to Jekyll!</h1>
+    <p class="post-meta"><time datetime="2015-12-14T17:33:09+00:00" itemprop="datePublished">Dec 14, 2015</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>In my time  as a tutor I found that students struggled a lot with the concept of stepping through a multidemensional array. The concept of a table lookup is not necessarily the hardest thing to figure out but at the same time it takes a bit of thinking on the part of the programmer to conceptualize the logic behind it.
-So the table looks somewhat like this:</p>
+    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Our Part</th>
-      <th style="text-align: right">Brand A</th>
-      <th style="text-align: right">Brand B</th>
-      <th style="text-align: right">Brand C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Our Part  1</td>
-      <td style="text-align: right">A1</td>
-      <td style="text-align: right">B1</td>
-      <td style="text-align: right">C1</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Our Part  2</td>
-      <td style="text-align: right">A2</td>
-      <td style="text-align: right">B2</td>
-      <td style="text-align: right">C2</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Our Part  3</td>
-      <td style="text-align: right">A3</td>
-      <td style="text-align: right">B3</td>
-      <td style="text-align: right">C3</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td style="text-align: left"> </td>
-      <td style="text-align: right"> </td>
-      <td style="text-align: right"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tfoot>
-</table>
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
-<p>In the case of this class the particular requirement of one of the applications the students make is that it has to go through an array of different parts made by different brands and it has to match that part up with the name of the part at the company. This lesson is a great way to introduce the capabilities of arrays as well as loops. I have also found that it is  a great way to introduce a student to Visual Studio’s debugger.</p>
+<p>Jekyll also offers powerful support for code snippets:</p>
 
-<p>So the real meat is the code that steps through this array:</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<pre><code class="language-vb">For columninteger As Integer = 0 To numberOfColumns    'steps through every row, this value can be changed to fit your needs.
-	For rowinteger As Integer = 0 To numberOfRows   'steps through every column, this value can be changed to fit your needs.
-		If partsnumberstring(columninteger, rowinteger) = PartsTextBox.Text.ToUpper Then
-		MessageBox.Show("Found part: " + partsnumberstring(columninteger, rowinteger) + "   --   Our Part: " + partsnumberstring(0, columninteger)) 'if the string matches put out the value in the first column
-		End If
-	Next
-Next
-</code></pre>
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
-<p>What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company’s part that matches it.//</p>
 
   </div>
 

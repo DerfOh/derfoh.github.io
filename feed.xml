@@ -1,30 +1,231 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Fred&#39;s Code Log</title>
+    <description>The personal encounters I have in my experiences as a programmer, and tinkerer.
+</description>
+    <link>http://derfoh.github.io/</link>
+    <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Dec 2015 23:26:14 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 23:26:14 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>VB Table Lookup</title>
+        <description>&lt;p&gt;In my time  as a tutor I found that students struggled a lot with the concept of stepping through a multidemensional array. The concept of a table lookup is not necessarily the hardest thing to figure out but at the same time it takes a bit of thinking on the part of the programmer to conceptualize the logic behind it.
+So the table looks somewhat like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Our Part&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Brand A&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Brand B&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Brand C&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Our Part  1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;B1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;C1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Our Part  2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;B2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;C2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Our Part  3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;B3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;C3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In the case of this class the particular requirement of one of the applications the students make is that it has to go through an array of different parts made by different brands and it has to match that part up with the name of the part at the company. This lesson is a great way to introduce the capabilities of arrays as well as loops. I have also found that it is  a great way to introduce a student to Visual Studio’s debugger.&lt;/p&gt;
+
+&lt;p&gt;So the real meat is the code that steps through this array:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-vb&quot;&gt;For columninteger As Integer = 0 To numberOfColumns    &#39;steps through every row, this value can be changed to fit your needs.
+	For rowinteger As Integer = 0 To numberOfRows   &#39;steps through every column, this value can be changed to fit your needs.
+		If partsnumberstring(columninteger, rowinteger) = PartsTextBox.Text.ToUpper Then
+		MessageBox.Show(&quot;Found part: &quot; + partsnumberstring(columninteger, rowinteger) + &quot;   --   Our Part: &quot; + partsnumberstring(0, columninteger)) &#39;if the string matches put out the value in the first column
+		End If
+	Next
+Next
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company’s part that matches it.//&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://derfoh.github.io/tips/2015/12/17/vb-table-lookup.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/17/vb-table-lookup.html</guid>
+        
+        <category>tips</category>
+        
+        
+        <category>tips</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>GadgetSearch</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;What is the application?
+    &lt;ul&gt;
+      &lt;li&gt;GadgetSearch is an application I made to teach my self as much android programming as I could. The primary reasoning behind this was that there are no applications that I could find that could search across on line retailers quickly for the latest and best technology.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What platform is it for?
+    &lt;ul&gt;
+      &lt;li&gt;Currently Gadget Search is only for Android devices. There is no version of iOS devices planned for future releases.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What did you learn from making this?
+    &lt;ul&gt;
+      &lt;li&gt;I learned many of the basics of programming in Android. I primarily used the Eclipse editor in conjunction with the Android SDK to build and test the project. I have since ported my development work flow over to Android Studio.&lt;/li&gt;
+      &lt;li&gt;The concepts of android that I got from this experience include:
+        &lt;ul&gt;
+          &lt;li&gt;Android Debugging&lt;/li&gt;
+          &lt;li&gt;Basic Android Syntax and libraries&lt;/li&gt;
+          &lt;li&gt;Design properties and layouts for front end UI&lt;/li&gt;
+          &lt;li&gt;Calling another app and passing information between applications (in this case a key word)&lt;/li&gt;
+          &lt;li&gt;How to use intents to start activities in other applications (in this case the bar code scanner)&lt;/li&gt;
+          &lt;li&gt;Many other concepts associated with android development&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Where do I get it?
+    &lt;ul&gt;
+      &lt;li&gt;Gadget Search can be downloaded from the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.derfohappco.gadgetsearch&quot;&gt;Google Play Store&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 22:08:50 +0000</pubDate>
+        <link>http://derfoh.github.io/gadgetsearch/2015/12/16/gadgetsearch.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/gadgetsearch/2015/12/16/gadgetsearch.html</guid>
+        
+        <category>projects</category>
+        
+        
+        <category>gadgetsearch</category>
+        
+      </item>
+    
+      <item>
+        <title>Working with blog theme</title>
+        <description>&lt;p&gt;I had a heck of a time figuring out how to theme jekyll. You’d think there would be just one css file to edit but you would be very wrong. Apparently themes for Jekyll are an issue and are not very consistent in their implementation. Furthermore the things you might be seeing as local changes when building the site locally do not show up on github’s build of the site. I wasn’t aware that build errors get sent to your email so it was good that I learned that. Something as simple as changing the font color in the highlighted fields has proven to be very difficult however. It even took me a bit to figure out how to get the title of the blog to a different color. I persevered though in at least changing the color of the site’s title.&lt;/p&gt;
+
+&lt;p&gt;It seems that the file I need to edit in my directory is in the &lt;code&gt;_sass&lt;/code&gt; folder, the themes then seem to be laid out in a similar fashion to a regular css file but it looks like there are variables that can be set in the &lt;code&gt;css\main.scss&lt;/code&gt; file. This has been my first encounter with Sass files and find it intreguiing that you can use CSS in this way. There are a few more tweaks I’d like to do You can find more about this language at &lt;a href=&quot;http://sass-lang.com/&quot;&gt;http://sass-lang.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I also found a great resource for the type of markdown my Jekyll implementation is using (called kramdown) at &lt;a href=&quot;http://kramdown.gettalong.org/syntax.html&quot;&gt;http://kramdown.gettalong.org/syntax.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that I have the site looking mostly how I want it to I am going to be working towards making more posts about the projects that I have currently on GitHub and go over their purpose, and if I expect to expand upon them.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 19:43:53 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</guid>
+        
+        <category>theming</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Archive page added!</title>
+        <description>&lt;p&gt;I found an easy way to implement an archive page into my Jekyll blog. Thanks to the author over at &lt;a href=&quot;http://reyhan.org&quot;&gt;reyhan.org&lt;/a&gt; I now have a simple archive page for the posts that I make to this log.&lt;/p&gt;
+
+&lt;p&gt;I had to add a file to my &lt;code&gt;_layouts&lt;/code&gt; directory called &lt;code&gt;archive.html&lt;/code&gt; that had the code from &lt;a href=&quot;http://reyhan.org/2013/03/jekyll-archive-without-plugins.html&quot;&gt;this site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then I added the archive.md so that the link would show up in the header. Next up I will be setting up analytics, and making it so that the front page is only limited to 5 posts.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 17:24:50 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</guid>
+        
+        <category>theming</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Remapping Caps to CTRL</title>
+        <description>&lt;p&gt;Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
+Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;$hexified = &quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;.Split(&#39;,&#39;) | % { &quot;0x$_&quot;}
+$kbLayout = &#39;HKLM:\System\CurrentControlSet\Control\Keyboard Layout&#39;
+New-ItemProperty -Path $kbLayout -Name &quot;Scancode Map&quot; -PropertyType Binary -Value ([byte[]]$hexified)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 12:29:38 +0000</pubDate>
+        <link>http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</guid>
+        
+        <category>keymapping,</category>
+        
+        <category>tips</category>
+        
+        
+        <category>tips</category>
+        
+      </item>
+    
+      <item>
+        <title>Getting Things Going</title>
+        <description>&lt;p&gt;I got most of the config worked out for this site. Jekyll has been an interesting experience getting set up. I also had to figure out how to set up the default config for a very useful sublime pluggin. Its worth checking out if you use Sublime text as your editor. It is called: &lt;a href=&quot;https://packagecontrol.io/packages/Jekyll&quot;&gt;sublime-Jekyll&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 03:31:06 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</guid>
+        
+        <category>theming</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello World!</title>
+        <description>&lt;p&gt;Hello! This is my first post to my code blog.&lt;/p&gt;
+
+&lt;p&gt;Setting up this blog with Jekyll was somewhat difficult overall it took me a few hours to figure out that I was missing half of the files I needed for this to work.&lt;/p&gt;
+
+&lt;p&gt;With a little help from a lot of googling though I finally think I have the basics down and at least now I can make posts. YAY!!!&lt;/p&gt;
+
+&lt;p&gt;Next up is getting this thing themed.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Dec 2015 02:30:21 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2015/12/15/hello-world.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/hello-world.html</guid>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
   </channel>
 </rss>
