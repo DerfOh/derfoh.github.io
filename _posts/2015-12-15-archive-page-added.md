@@ -2,6 +2,7 @@
 layout: post
 title: Archive page added!
 categories: check-in
+tags: theming
 published: True
 date: 2015-12-15 17:24:50
 ---

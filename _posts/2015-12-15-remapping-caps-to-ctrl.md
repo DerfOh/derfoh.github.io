@@ -2,7 +2,7 @@
 layout: post
 title: Remapping Caps to CTRL
 categories: tips
-tags: keymapping
+tags: keymapping, tips
 published: True
 date: 2015-12-15 12:29:38
 ---

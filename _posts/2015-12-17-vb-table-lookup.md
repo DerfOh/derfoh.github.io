@@ -2,7 +2,7 @@
 layout: post
 title: VB Table Lookup
 categories: tips
-tags: []
+tags: tips
 published: True
 
 ---

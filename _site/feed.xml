@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 19:00:53 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 19:00:53 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 20:09:52 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 20:09:52 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -78,6 +78,8 @@ So the table looks somewhat like this:&lt;/p&gt;
         <link>http://derfoh.github.io/tips/2015/12/17/vb-table-lookup.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/17/vb-table-lookup.html</guid>
         
+        <category>tips</category>
+        
         
         <category>tips</category>
         
@@ -122,6 +124,8 @@ So the table looks somewhat like this:&lt;/p&gt;
         <link>http://derfoh.github.io/gadgetsearch/2015/12/16/gadgetsearch.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/gadgetsearch/2015/12/16/gadgetsearch.html</guid>
         
+        <category>projects</category>
+        
         
         <category>gadgetsearch</category>
         
@@ -141,7 +145,7 @@ So the table looks somewhat like this:&lt;/p&gt;
         <link>http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</guid>
         
-        <category>themeing</category>
+        <category>theming</category>
         
         
         <category>check-in</category>
@@ -159,6 +163,8 @@ So the table looks somewhat like this:&lt;/p&gt;
         <pubDate>Tue, 15 Dec 2015 17:24:50 +0000</pubDate>
         <link>http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</guid>
+        
+        <category>theming</category>
         
         
         <category>check-in</category>
@@ -180,7 +186,9 @@ Simply open powershell as an administrator and run the following commands then r
         <link>http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</guid>
         
-        <category>keymapping</category>
+        <category>keymapping,</category>
+        
+        <category>tips</category>
         
         
         <category>tips</category>
@@ -194,6 +202,8 @@ Simply open powershell as an administrator and run the following commands then r
         <pubDate>Tue, 15 Dec 2015 03:31:06 +0000</pubDate>
         <link>http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</guid>
+        
+        <category>theming</category>
         
         
         <category>check-in</category>
