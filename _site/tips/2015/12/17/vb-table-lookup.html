@@ -135,13 +135,13 @@ So the table looks somewhat like this:</p>
 
 <p>So the real meat is the code that steps through this array:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">For</span> <span class="n">columninteger</span> <span class="ow">As</span> <span class="kt">Integer</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">To</span> <span class="n">numberOfColumns</span>    <span class="c1">'steps through every row, this value can be changed to fit your needs.</span>
-	<span class="k">For</span> <span class="n">rowinteger</span> <span class="ow">As</span> <span class="kt">Integer</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">To</span> <span class="n">numberOfRows</span>   <span class="c1">'steps through every column, this value can be changed to fit your needs.</span>
-		<span class="k">If</span> <span class="n">partsnumberstring</span><span class="p">(</span><span class="n">columninteger</span><span class="p">,</span> <span class="n">rowinteger</span><span class="p">)</span> <span class="o">=</span> <span class="n">PartsTextBox</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">ToUpper</span> <span class="k">Then</span>
-		<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"Found part: "</span> <span class="o">+</span> <span class="n">partsnumberstring</span><span class="p">(</span><span class="n">columninteger</span><span class="p">,</span> <span class="n">rowinteger</span><span class="p">)</span> <span class="o">+</span> <span class="s">"   --   Our Part: "</span> <span class="o">+</span> <span class="n">partsnumberstring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">columninteger</span><span class="p">))</span> <span class="c1">'if the string matches put out the value in the first column</span>
-		<span class="k">End</span> <span class="k">If</span>
-	<span class="k">Next</span>
-<span class="k">Next</span>
+<div class="vb highlighter-rouge"><pre class="highlight"><code>For columninteger As Integer = 0 To numberOfColumns    'steps through every row, this value can be changed to fit your needs.
+	For rowinteger As Integer = 0 To numberOfRows   'steps through every column, this value can be changed to fit your needs.
+		If partsnumberstring(columninteger, rowinteger) = PartsTextBox.Text.ToUpper Then
+		MessageBox.Show("Found part: " + partsnumberstring(columninteger, rowinteger) + "   --   Our Part: " + partsnumberstring(0, columninteger)) 'if the string matches put out the value in the first column
+		End If
+	Next
+Next
 </code></pre>
 </div>
 
