@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 22:08:32 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 22:08:32 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 22:29:07 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 22:29:07 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -72,7 +72,8 @@ So the table looks somewhat like this:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company’s part that matches it.&lt;/p&gt;
+&lt;p&gt;What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company’s part that matches it.
+/&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
         <link>http://derfoh.github.io/tips/2015/12/17/vb-table-lookup.html</link>

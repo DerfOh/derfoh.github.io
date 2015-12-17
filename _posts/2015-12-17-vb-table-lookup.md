@@ -39,3 +39,4 @@ Next
 ~~~
 
 What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company's part that matches it.
+/
