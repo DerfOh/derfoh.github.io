@@ -16,11 +16,6 @@ twitter_username: derfoh
 github_username:  derfoh
 timezone: America/New_York
 
-# tags:
-# 	- jekyll
-# 	- code
-# 	- projects
-
 # Build settings
 markdown: kramdown
 highlighter: pygment
