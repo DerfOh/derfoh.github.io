@@ -23,5 +23,7 @@ timezone: America/New_York
 
 # Build settings
 markdown: kramdown
-
+syntax-highlighting:
+  enabled : true
+  css: main.css
 
