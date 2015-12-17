@@ -96,11 +96,10 @@ code {
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef;
-  color: black; }
+  color: grey-color-dark; }
 
 code {
-  padding: 1px 5px;
-  color: black; }
+  padding: 1px 5px; }
 
 pre {
   padding: 8px 12px;

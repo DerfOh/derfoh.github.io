@@ -133,12 +133,11 @@ code {
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
-    color: black;
+    color: grey-color-dark;
 }
 
 code {
     padding: 1px 5px;
-    color: black;
 }
 
 pre {
@@ -149,7 +148,7 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
-        
+
     }
 }
 
