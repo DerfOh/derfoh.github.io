@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Fred's Code Log
+title: Coding With The Flow
 email: fredrick@fredrickpaulin.com
 description: > # this means to ignore newlines until "baseurl:"
   The personal encounters I have in my experiences as a programmer, and tinkerer.
