@@ -20,4 +20,4 @@ timezone: America/New_York
 markdown: kramdown
 syntax-highlighting:
   enabled : true
-  css: syntax-highlighting.css
+  css: main.css
