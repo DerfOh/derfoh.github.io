@@ -28,7 +28,7 @@ In the case of this class the particular requirement of one of the applications 
 So the real meat is the code that steps through this array:
 
 
-{% highlight vb linenos=table %}
+{% highlight visualbasic linenos=table %}
 For columninteger As Integer = 0 To numberOfColumns    'steps through every row, this value can be changed to fit your needs.
 	For rowinteger As Integer = 0 To numberOfRows   'steps through every column, this value can be changed to fit your needs.
 		If partsnumberstring(columninteger, rowinteger) = PartsTextBox.Text.ToUpper Then
