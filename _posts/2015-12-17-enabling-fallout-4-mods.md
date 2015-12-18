@@ -22,3 +22,5 @@ bEnableFileSelection=1
 ~~~text
 sResourceDataDirsFinal=STRINGS\, TEXTURES\, MUSIC\, SOUND\, INTERFACE\, MESHES\, PROGRAMS\, MATERIALS\, LODSETTINGS\, VIS\, MISC\, SCRIPTS\, SHADERSFX\
 ~~~
+
+Now to wrap things up within those folders will be where your mods will eventually go. Head over to the [Nexus Community](http://www.nexusmods.com/fallout4/)
