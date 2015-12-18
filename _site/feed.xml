@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Dec 2015 03:00:38 +0000</pubDate>
-    <lastBuildDate>Fri, 18 Dec 2015 03:00:38 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 03:02:37 +0000</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 03:02:37 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -103,20 +103,13 @@ So the table looks somewhat like this:&lt;/p&gt;
 
 &lt;p&gt;So the real meat is the code that steps through this array:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vbnet&quot; data-lang=&quot;vbnet&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;For columninteger As Integer = 0 To numberOfColumns    &#39;steps through every row, this value can be changed to fit your needs.
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vbnet&quot; data-lang=&quot;vbnet&quot;&gt;For columninteger As Integer = 0 To numberOfColumns    &#39;steps through every row, this value can be changed to fit your needs.
 	For rowinteger As Integer = 0 To numberOfRows   &#39;steps through every column, this value can be changed to fit your needs.
 		If partsnumberstring(columninteger, rowinteger) = PartsTextBox.Text.ToUpper Then
 		MessageBox.Show(&quot;Found part: &quot; + partsnumberstring(columninteger, rowinteger) + &quot;   --   Our Part: &quot; + partsnumberstring(0, columninteger)) &#39;if the string matches put out the value in the first column
 		End If
 	Next
-Next&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+Next&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;What the code does is it steps through every column and row one by one cand compares the value in the text box that the user enters to the value found in that particular portion of the array. If the value matches the code outputs a message to the user that shows the part number they entered and the part number of the company’s part that matches it.//&lt;/p&gt;
 </description>
@@ -222,12 +215,9 @@ Next&lt;span class=&quot;w&quot;&gt;
         <description>&lt;p&gt;Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
 Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$hexified&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;&lt;/span&gt;.Split&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;,&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; | % &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0x&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$hexified&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;&lt;/span&gt;.Split&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;,&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; | % &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0x&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$kbLayout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;HKLM:\System\CurrentControlSet\Control\Keyboard Layout&#39;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;New-ItemProperty&lt;/span&gt; -Path &lt;span class=&quot;nv&quot;&gt;$kbLayout&lt;/span&gt; -Name &lt;span class=&quot;s2&quot;&gt;&quot;Scancode Map&quot;&lt;/span&gt; -PropertyType Binary -Value &lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]]&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexified&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nb&quot;&gt;New-ItemProperty&lt;/span&gt; -Path &lt;span class=&quot;nv&quot;&gt;$kbLayout&lt;/span&gt; -Name &lt;span class=&quot;s2&quot;&gt;&quot;Scancode Map&quot;&lt;/span&gt; -PropertyType Binary -Value &lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]]&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexified&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
         <pubDate>Tue, 15 Dec 2015 12:29:38 +0000</pubDate>
