@@ -6,9 +6,42 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 23:50:15 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 23:50:15 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 00:10:10 +0000</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 00:10:10 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Enabling Fallout 4 Mods</title>
+        <description>&lt;p&gt;When making a custom skin for the popular game: &lt;a href=&quot;http://store.steampowered.com/agecheck/app/377160/&quot;&gt;Fallout 4&lt;/a&gt; I found that the mod would not load into the game until I tweaked a few things. Thanks to &lt;a href=&quot;http://www.nexusmods.com/fallout4/videos/87/?&quot;&gt;this post&lt;/a&gt; I found the values I needed to change in order to get things working.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;These edits are required for installed mods to work in your game.
+You will need to add the following line to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Fallout4Prefs.ini&lt;/code&gt; file below the section marked [Launcher]:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bEnableFileSelection=1&lt;/code&gt;
+You will need to change the following line in &lt;code class=&quot;highlighter-rouge&quot;&gt;Fallout4.ini&lt;/code&gt;:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sResourceDataDirsFinal=STRINGS\, TEXTURES\, MUSIC\, SOUND\, INTERFACE\, MESHES\, PROGRAMS\, MATERIALS\, LODSETTINGS\, VIS\, MISC\, SCRIPTS\, SHADERSFX\&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 17 Dec 2015 19:02:05 +0000</pubDate>
+        <link>http://derfoh.github.io/tips/2015/12/17/enabling-fallout-4-mods.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/17/enabling-fallout-4-mods.html</guid>
+        
+        <category>video</category>
+        
+        <category>games,</category>
+        
+        <category>mods,</category>
+        
+        <category>tips,</category>
+        
+        <category>fallout</category>
+        
+        <category>4</category>
+        
+        
+        <category>tips</category>
+        
+      </item>
     
       <item>
         <title>VB Table Lookup</title>

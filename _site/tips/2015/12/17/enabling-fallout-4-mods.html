@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fred's Code Log</title>
-  <meta name="description" content="The personal encounters I have in my experiences as a programmer, and tinkerer.
-">
+  <title>Enabling Fallout 4 Mods</title>
+  <meta name="description" content="When making a custom skin for the popular game: Fallout 4 I found that the mod would not load into the game until I tweaked a few things. Thanks to this post...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/">
+  <link rel="canonical" href="http://derfoh.github.io/tips/2015/12/17/enabling-fallout-4-mods.html">
   <link rel="alternate" type="application/rss+xml" title="Fred's Code Log" href="http://derfoh.github.io/feed.xml">
 
   <script>
@@ -78,54 +77,27 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-<table>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <td><h1 class="page-heading">Recent Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Enabling Fallout 4 Mods</h1>
+    <p class="post-meta"><time datetime="2015-12-17T19:02:05+00:00" itemprop="datePublished">Dec 17, 2015</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Dec 17, 2015</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>When making a custom skin for the popular game: <a href="http://store.steampowered.com/agecheck/app/377160/">Fallout 4</a> I found that the mod would not load into the game until I tweaked a few things. Thanks to <a href="http://www.nexusmods.com/fallout4/videos/87/?">this post</a> I found the values I needed to change in order to get things working.</p>
 
-        <h2>
-          <a class="post-link" href="/tips/2015/12/17/enabling-fallout-4-mods.html" title="When making a custom skin for the popular game: Fallout...">Enabling Fallout 4 Mods</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 17, 2015</span>
+<blockquote>
+  <p>These edits are required for installed mods to work in your game.
+You will need to add the following line to the <code class="highlighter-rouge">Fallout4Prefs.ini</code> file below the section marked [Launcher]:
+<code class="highlighter-rouge">bEnableFileSelection=1</code>
+You will need to change the following line in <code class="highlighter-rouge">Fallout4.ini</code>:
+<code class="highlighter-rouge">sResourceDataDirsFinal=STRINGS\, TEXTURES\, MUSIC\, SOUND\, INTERFACE\, MESHES\, PROGRAMS\, MATERIALS\, LODSETTINGS\, VIS\, MISC\, SCRIPTS\, SHADERSFX\</code></p>
+</blockquote>
 
-        <h2>
-          <a class="post-link" href="/tips/2015/12/17/vb-table-lookup.html" title="In my time as a tutor I found that students...">VB Table Lookup</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 16, 2015</span>
+  </div>
 
-        <h2>
-          <a class="post-link" href="/gadgetsearch/2015/12/16/gadgetsearch.html" title="What is the application? GadgetSearch is an application I made...">GadgetSearch</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <a href ="/archive/" >More Posts</a>
-  </td>
-
-  <td width="50%">
-    <img src="/images/avatar.png" />  
-    <p class="page-content">
-        Welcome to my code log! I use this blog as my home for my projects and meandering thoughts as well as a tool to chronicle my journey through the world of programming, software, and technology. I hope that in some way this will be a useful resource for someone who may be starting their own journey with coding.
-    </p> 
-  </td>
-
-</table>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </div>
