@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Dec 2015 02:52:58 +0000</pubDate>
-    <lastBuildDate>Fri, 18 Dec 2015 02:52:58 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 02:45:54 +0000</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 02:45:54 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -103,7 +103,7 @@ So the table looks somewhat like this:&lt;/p&gt;
 
 &lt;p&gt;So the real meat is the code that steps through this array:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-visualbasic&quot; data-lang=&quot;visualbasic&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vb&quot; data-lang=&quot;vb&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
