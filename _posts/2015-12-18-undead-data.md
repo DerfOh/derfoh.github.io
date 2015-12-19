@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: post
 title: Undead Data
 categories: ["UndeadData"]
 tags: ["projects","Web Design","LAMP"]
