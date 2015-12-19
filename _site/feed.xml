@@ -6,9 +6,44 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Dec 2015 03:55:28 +0000</pubDate>
-    <lastBuildDate>Fri, 18 Dec 2015 03:55:28 +0000</lastBuildDate>
+    <pubDate>Sat, 19 Dec 2015 00:32:05 +0000</pubDate>
+    <lastBuildDate>Sat, 19 Dec 2015 00:32:05 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Undead Data</title>
+        <description>&lt;p&gt;For my SQL class this semester we were asked to do a series of things that walked us through the creation of a great relational database. For my project our group decided on making a database for a fictional post-apocalyptic world where zombies are roaming the earth. Think watered down version of an application that could be used to keep track of the characters on popular television shows or movies. Another possible use for the design as discussed by my group is in making some sort of table top turn based game.&lt;/p&gt;
+
+&lt;p&gt;Wile the sole purpose of the project was just to create the database, not a front end, I decided to take things one step further for our deliverable for the end of the semester. I made it into a full LAMP stack website that demonstrated that the database and their queries can work with current web design standards.&lt;/p&gt;
+
+&lt;p&gt;Also this project allotted me a good excuse to learn a bit of PHP as I had minimal experience with it as a language prior to this experience. Ultimately while the code is clearly amateur it was a great way to learn a good variety of things such as but not limited to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basic PHP formatting and syntax&lt;/li&gt;
+  &lt;li&gt;Using PHP to connect to a SQL database&lt;/li&gt;
+  &lt;li&gt;Using PHP to query and draw the output into HTML tables.&lt;/li&gt;
+  &lt;li&gt;POST and GET operations&lt;/li&gt;
+  &lt;li&gt;Full LAMP Stack design philosophy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyway here is a link to the project. I will probably keep it up indefinitely or until I decide I want to use that particular VPS for something different.&lt;/p&gt;
+
+&lt;h3 id=&quot;undead-dataundeaddataderfohme&quot;&gt;&lt;strong&gt;&lt;a href=&quot;undeaddata.derfoh.me&quot;&gt;Undead Data&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+</description>
+        <pubDate>Fri, 18 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://derfoh.github.io/undeaddata/2015/12/18/undead-data.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/undeaddata/2015/12/18/undead-data.html</guid>
+        
+        <category>projects</category>
+        
+        <category>Web Design</category>
+        
+        <category>LAMP</category>
+        
+        
+        <category>UndeadData</category>
+        
+      </item>
     
       <item>
         <title>Enabling Fallout 4 Mods</title>
