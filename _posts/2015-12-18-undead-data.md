@@ -21,4 +21,4 @@ Also this project allotted me a good excuse to learn a bit of PHP as I had minim
 
 Anyway here is a link to the project. I will probably keep it up indefinitely or until I decide I want to use that particular VPS for something different.
 
-### __[Undead Data](undeaddata.derfoh.me)__
+### __[Undead Data](http://undeaddata.derfoh.me)__
