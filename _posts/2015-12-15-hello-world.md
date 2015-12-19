@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World!"
 date:   2015-12-15 2:30:21
 categories: check-in
+comments: True
 ---
 
 Hello! This is my first post to my code blog.
