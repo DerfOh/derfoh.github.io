@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to mod Power Armor textures in Fallout 4
-categories: ["tips"]
+categories: ["tutorial"]
 tags: ["Modding", "Video Games", "Tutorial"]
 published: False
 comments: True
