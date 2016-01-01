@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fred's Code Log</title>
-  <meta name="description" content="The personal encounters I have in my experiences as a programmer, and tinkerer.
-">
+  <title>Remapping Caps to CTRL</title>
+  <meta name="description" content="Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.Simply open powershell as an administrator and run t...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/">
+  <link rel="canonical" href="http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html">
   <link rel="alternate" type="application/rss+xml" title="Fred's Code Log" href="http://derfoh.github.io/feed.xml">
 
   <script>
@@ -74,54 +73,26 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-<table>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <td><h1 class="page-heading">Recent Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Remapping Caps to CTRL</h1>
+    <p class="post-meta"><time datetime="2015-12-15T12:29:38+00:00" itemprop="datePublished">Dec 15, 2015</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Dec 16, 2015</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
+Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.</p>
 
-        <h2>
-          <a class="post-link" href="/check-in/2015/12/16/working-with-blog-theme.html" title="I had a heck of a time figuring out how...">Working with blog theme</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 15, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/check-in/2015/12/15/archive-page-added.html" title="I found an easy way to implement an archive page...">Archive page added!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 15, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/tips/2015/12/15/remapping-caps-to-ctrl.html" title="Found this helpful tip in a stack overflow after trying...">Remapping Caps to CTRL</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <a href ="/archive/" >More Posts</a>
-  </td>
-
-  <td width="50%">
-    <img src="/images/avatar.png" align="middle">  
-    <p class="page-content">
-        Welcome to my code log! I use this blog as my home for my projects and meandering thoughts as well as a tool to chronical my journey through the world of programming, software, and technology. I hope that in some way this will be a useful resource for someone who may be starting their own journey with coding.
-    </p> 
-  </td>
-
-</table>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nv">$hexified</span> <span class="o">=</span> <span class="s2">"00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00"</span>.Split<span class="o">(</span><span class="s1">','</span><span class="o">)</span> | % <span class="o">{</span> <span class="s2">"0x</span><span class="nv">$_</span><span class="s2">"</span><span class="o">}</span>
+<span class="nv">$kbLayout</span> <span class="o">=</span> <span class="s1">'HKLM:\System\CurrentControlSet\Control\Keyboard Layout'</span>
+<span class="nb">New-ItemProperty</span> -Path <span class="nv">$kbLayout</span> -Name <span class="s2">"Scancode Map"</span> -PropertyType Binary -Value <span class="o">([</span><span class="kt">byte</span><span class="o">[]]</span><span class="nv">$hexified</span><span class="o">)</span>
+</code></pre>
 </div>
+
+  </div>
+
+</article>
 
       </div>
     </div>
