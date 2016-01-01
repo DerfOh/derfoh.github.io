@@ -4,7 +4,7 @@ title: VB Table Lookup
 categories: tips
 tags: tips
 published: True
-
+comments: True
 ---
 
 In my time  as a tutor I found that students struggled a lot with the concept of stepping through a multidemensional array. The concept of a table lookup is not necessarily the hardest thing to figure out but at the same time it takes a bit of thinking on the part of the programmer to conceptualize the logic behind it.

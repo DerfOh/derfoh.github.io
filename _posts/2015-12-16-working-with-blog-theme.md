@@ -5,6 +5,8 @@ categories: check-in
 tags: theming
 published: True
 date: 2015-12-16 19:43:53
+comments: True
+
 ---
 
 I had a heck of a time figuring out how to theme jekyll. You'd think there would be just one css file to edit but you would be very wrong. Apparently themes for Jekyll are an issue and are not very consistent in their implementation. Furthermore the things you might be seeing as local changes when building the site locally do not show up on github's build of the site. I wasn't aware that build errors get sent to your email so it was good that I learned that. Something as simple as changing the font color in the highlighted fields has proven to be very difficult however. It even took me a bit to figure out how to get the title of the blog to a different color. I persevered though in at least changing the color of the site's title.

@@ -5,6 +5,7 @@ categories: ["UndeadData"]
 tags: ["projects","Web Design","LAMP"]
 published: True
 date: 2015-12-18
+comments: True
 ---
 
 For my SQL class this semester we were asked to do a series of things that walked us through the creation of a great relational database. For my project our group decided on making a database for a fictional post-apocalyptic world where zombies are roaming the earth. Think watered down version of an application that could be used to keep track of the characters on popular television shows or movies. Another possible use for the design as discussed by my group is in making some sort of table top turn based game.

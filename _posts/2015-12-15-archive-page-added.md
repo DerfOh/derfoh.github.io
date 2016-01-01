@@ -5,6 +5,7 @@ categories: check-in
 tags: theming
 published: True
 date: 2015-12-15 17:24:50
+comments: True
 ---
 
 I found an easy way to implement an archive page into my Jekyll blog. Thanks to the author over at [reyhan.org](http://reyhan.org) I now have a simple archive page for the posts that I make to this log.

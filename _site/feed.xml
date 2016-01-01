@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Dec 2015 00:35:33 +0000</pubDate>
-    <lastBuildDate>Sat, 19 Dec 2015 00:35:33 +0000</lastBuildDate>
+    <pubDate>Sat, 19 Dec 2015 02:01:22 +0000</pubDate>
+    <lastBuildDate>Sat, 19 Dec 2015 02:01:22 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -259,7 +259,7 @@ Simply open powershell as an administrator and run the following commands then r
         <link>http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</guid>
         
-        <category>keymapping,</category>
+        <category>keymapping</category>
         
         <category>tips</category>
         

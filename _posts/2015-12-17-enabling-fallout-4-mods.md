@@ -5,6 +5,7 @@ categories: tips
 tags: ['video games', 'mods', 'tips', 'fallout 4']
 published: True
 date: 2015-12-17 19:02:05
+comments: True
 ---
 
 When making a custom skin for the popular game: [Fallout 4](http://store.steampowered.com/agecheck/app/377160/) I found that the mod would not load into the game until I tweaked a few things. Thanks to [this post](http://www.nexusmods.com/fallout4/videos/87/?) I found the values I needed to change in order to get things working.
