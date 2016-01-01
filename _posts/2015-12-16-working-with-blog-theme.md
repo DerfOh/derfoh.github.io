@@ -2,7 +2,7 @@
 layout: post
 title: Working with blog theme
 categories: check-in
-tags: themeing
+tags: theming
 published: True
 date: 2015-12-16 19:43:53
 ---
