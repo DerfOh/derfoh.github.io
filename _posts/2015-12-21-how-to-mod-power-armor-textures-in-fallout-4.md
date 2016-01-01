@@ -42,3 +42,4 @@ The textures you make should be saved with the following naming conventions for 
 	* t60legmetal_d.dds
 	* Dimensions: 2048 x 2048
 
+To start out it might be easiest to learn how to extract the textures that bathesda has
