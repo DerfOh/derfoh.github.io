@@ -1,0 +1,4 @@
+---
+title: GadgetSearch
+permalink: /GadgetSearch/
+---
