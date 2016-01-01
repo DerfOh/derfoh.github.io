@@ -6,9 +6,53 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 02:47:19 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 02:47:19 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 03:47:03 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 03:47:03 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>GadgetSearch</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;What is the application?
+    &lt;ul&gt;
+      &lt;li&gt;GadgetSearch is an application I made to teach my self as much android programming as I could. The primary reasoning behind this was that there are no applications that I could find that could search across on line retailers quickly for the latest and best technology.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What platform is it for?
+    &lt;ul&gt;
+      &lt;li&gt;Currently Gadget Search is only for Android devices. There is no version of iOS devices planned for future releases.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What did you learn from making this?
+    &lt;ul&gt;
+      &lt;li&gt;I learned many of the basics of programming in Android. I primarily used the Eclipse editor in conjunction with the Android SDK to build and test the project. I have since ported my development work flow over to Android Studio.&lt;/li&gt;
+      &lt;li&gt;The concepts of android that I got from this experience include:
+        &lt;ul&gt;
+          &lt;li&gt;Android Debugging&lt;/li&gt;
+          &lt;li&gt;Basic Android Syntax and libraries&lt;/li&gt;
+          &lt;li&gt;Design properties and layouts for front end UI&lt;/li&gt;
+          &lt;li&gt;Calling another app and passing information between applications (in this case a key word)&lt;/li&gt;
+          &lt;li&gt;How to use intents to start activities in other applications (in this case the bar code scanner)&lt;/li&gt;
+          &lt;li&gt;Many other concepts associated with android development&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Where do I get it?
+    &lt;ul&gt;
+      &lt;li&gt;Gadget Search can be downloaded from the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.derfohappco.gadgetsearch&quot;&gt;Google Play Store&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 22:08:50 +0000</pubDate>
+        <link>http://derfoh.github.io/gadgetsearch/2015/12/16/gadgetsearch.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/gadgetsearch/2015/12/16/gadgetsearch.html</guid>
+        
+        
+        <category>gadgetsearch</category>
+        
+      </item>
     
       <item>
         <title>Working with blog theme</title>
