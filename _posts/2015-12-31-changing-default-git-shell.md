@@ -6,6 +6,8 @@ tags: ["tips","git","bash"]
 published: true
 date: 2015-12-31 15:02:27
 
+comments: true
+
 ---
 Had some trouble finding an answer to this, maybe I was wording it wrong. Here it is in case there is another curious party. 
 

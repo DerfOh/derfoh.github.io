@@ -3,7 +3,7 @@ layout: post
 title: Enabling Fallout 4 Mods
 categories: tips
 tags: ['video games', 'mods', 'tips', 'fallout 4']
-published: True
+published: False
 date: 2015-12-17 19:02:05
 comments: True
 ---
