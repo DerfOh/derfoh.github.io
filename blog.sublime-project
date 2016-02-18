@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+	    {
+	        "follow_symlinks": true,
+	        "path": "C:\\Users\\Fredrick\\Documents\\GitHub\\derfoh.github.io\\"
+	    }
+	],
+
+	"settings":
+	{
+	    "Jekyll":
+	    {
+	        "posts_path": "C:\\Users\\Fredrick\\Documents\\GitHub\\derfoh.github.io\\_posts",
+	        "drafts_path": "C:\\Users\\Fredrick\\Documents\\GitHub\\derfoh.github.io\\_drafts",
+	    }
+	},
+}
