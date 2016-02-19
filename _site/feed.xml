@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Feb 2016 01:56:24 +0000</pubDate>
-    <lastBuildDate>Fri, 19 Feb 2016 01:56:24 +0000</lastBuildDate>
+    <pubDate>Fri, 19 Feb 2016 03:00:58 +0000</pubDate>
+    <lastBuildDate>Fri, 19 Feb 2016 03:00:58 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -41,8 +41,8 @@
 
 &lt;ol&gt;
   &lt;li&gt;Click on the cog in the upper right of the GitHub gui&lt;/li&gt;
-  &lt;li&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Directly under &lt;code class=&quot;highlighter-rouge&quot;&gt;Clone Path&lt;/code&gt; there is an option: &lt;code class=&quot;highlighter-rouge&quot;&gt;Default Shell&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;code&gt;Options&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Directly under &lt;code&gt;Clone Path&lt;/code&gt; there is an option: &lt;code&gt;Default Shell&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Select the shell you want to use when you go to start&amp;gt;git shell&lt;/li&gt;
   &lt;li&gt;Click Save&lt;/li&gt;
 &lt;/ol&gt;
@@ -222,7 +222,7 @@ Next&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         <title>Working with blog theme</title>
         <description>&lt;p&gt;I had a heck of a time figuring out how to theme jekyll. You’d think there would be just one css file to edit but you would be very wrong. Apparently themes for Jekyll are an issue and are not very consistent in their implementation. Furthermore the things you might be seeing as local changes when building the site locally do not show up on github’s build of the site. I wasn’t aware that build errors get sent to your email so it was good that I learned that. Something as simple as changing the font color in the highlighted fields has proven to be very difficult however. It even took me a bit to figure out how to get the title of the blog to a different color. I persevered though in at least changing the color of the site’s title.&lt;/p&gt;
 
-&lt;p&gt;It seems that the file I need to edit in my directory is in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass&lt;/code&gt; folder, the themes then seem to be laid out in a similar fashion to a regular css file but it looks like there are variables that can be set in the &lt;code class=&quot;highlighter-rouge&quot;&gt;css\main.scss&lt;/code&gt; file. This has been my first encounter with Sass files and find it intreguiing that you can use CSS in this way. There are a few more tweaks I’d like to do You can find more about this language at &lt;a href=&quot;http://sass-lang.com/&quot;&gt;http://sass-lang.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It seems that the file I need to edit in my directory is in the &lt;code&gt;_sass&lt;/code&gt; folder, the themes then seem to be laid out in a similar fashion to a regular css file but it looks like there are variables that can be set in the &lt;code&gt;css\main.scss&lt;/code&gt; file. This has been my first encounter with Sass files and find it intreguiing that you can use CSS in this way. There are a few more tweaks I’d like to do You can find more about this language at &lt;a href=&quot;http://sass-lang.com/&quot;&gt;http://sass-lang.com/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I also found a great resource for the type of markdown my Jekyll implementation is using (called kramdown) at &lt;a href=&quot;http://kramdown.gettalong.org/syntax.html&quot;&gt;http://kramdown.gettalong.org/syntax.html&lt;/a&gt;&lt;/p&gt;
 
@@ -243,7 +243,7 @@ Next&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         <title>Archive page added!</title>
         <description>&lt;p&gt;I found an easy way to implement an archive page into my Jekyll blog. Thanks to the author over at &lt;a href=&quot;http://reyhan.org&quot;&gt;reyhan.org&lt;/a&gt; I now have a simple archive page for the posts that I make to this log.&lt;/p&gt;
 
-&lt;p&gt;I had to add a file to my &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; directory called &lt;code class=&quot;highlighter-rouge&quot;&gt;archive.html&lt;/code&gt; that had the code from &lt;a href=&quot;http://reyhan.org/2013/03/jekyll-archive-without-plugins.html&quot;&gt;this site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I had to add a file to my &lt;code&gt;_layouts&lt;/code&gt; directory called &lt;code&gt;archive.html&lt;/code&gt; that had the code from &lt;a href=&quot;http://reyhan.org/2013/03/jekyll-archive-without-plugins.html&quot;&gt;this site&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Then I added the archive.md so that the link would show up in the header. Next up I will be setting up analytics, and making it so that the front page is only limited to 5 posts.&lt;/p&gt;
 </description>

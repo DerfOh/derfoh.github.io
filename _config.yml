@@ -17,7 +17,9 @@ github_username:  derfoh
 timezone: America/New_York
 
 # Build settings
-markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: pygments
 syntax-highlighting:
   enabled : true
   css: main.css
