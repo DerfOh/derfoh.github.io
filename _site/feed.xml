@@ -6,9 +6,63 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Dec 2015 02:17:42 +0000</pubDate>
-    <lastBuildDate>Sat, 19 Dec 2015 02:17:42 +0000</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Fri, 19 Feb 2016 01:56:24 +0000</pubDate>
+    <lastBuildDate>Fri, 19 Feb 2016 01:56:24 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Changes to 841g site</title>
+        <description>&lt;p&gt;Lately I have been working on getting a website I made for a gaming comunity moved over to github pages. A lot of the sites that I have thrown together really only have basic needs in terms of the capability of what is required on the back end. As for web servers however after years of doing things such as trying to navigate a cPanel with millions of different functions spread haphazardly, to manually implementing a LAMP stack (or rather a LAP stack as I didn’t have much use for SQL until recently). I have found that at this point it is worth learning the way GitHub hosts their pages if your primary goal is to just make a basic site for a club or a group.&lt;/p&gt;
+
+&lt;p&gt;That being said we have changed much of the design at the site (you can check it out &lt;a href=&quot;http://841g.github.io&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;In our case me (and another community manager) created an organization to keep things simpler when it came to both of us working on the site. It had become troublesome to get his fork up to date every time a pull needed to be made between the forks. We are both hoping that commiting to the same repo will simplify things.&lt;/p&gt;
+
+&lt;p&gt;I’m not sure though if for just us two this is more of a “nuclear option” and that it might be a bit overkill for just a small team. I wonder what aproaches other people generally take for this. For now though this works for us and hopefully if there are eventually more coding projects added under the org it will allow us to scale better as we get more members. I plan to eventually move a few of the bots that we use in our various group chats the group uses under the organization too in hopes that other members decide to work on them.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Feb 2016 22:27:32 +0000</pubDate>
+        <link>http://derfoh.github.io/check-in/2016/02/17/changes-to-841g-site.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/02/17/changes-to-841g-site.html</guid>
+        
+        <category>webdesign</category>
+        
+        <category>projects</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
+    
+      <item>
+        <title>Changing Default Git Shell</title>
+        <description>&lt;p&gt;Had some trouble finding an answer to this, maybe I was wording it wrong. Here it is in case there is another curious party.&lt;/p&gt;
+
+&lt;p&gt;To change the shell that you use do the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click on the cog in the upper right of the GitHub gui&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Directly under &lt;code class=&quot;highlighter-rouge&quot;&gt;Clone Path&lt;/code&gt; there is an option: &lt;code class=&quot;highlighter-rouge&quot;&gt;Default Shell&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select the shell you want to use when you go to start&amp;gt;git shell&lt;/li&gt;
+  &lt;li&gt;Click Save&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now when you select Git Shell from your start menu it will open Git Bash.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Dec 2015 15:02:27 +0000</pubDate>
+        <link>http://derfoh.github.io/tips/2015/12/31/changing-default-git-shell.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/31/changing-default-git-shell.html</guid>
+        
+        <category>tips</category>
+        
+        <category>git</category>
+        
+        <category>bash</category>
+        
+        
+        <category>tips</category>
+        
+      </item>
     
       <item>
         <title>Undead Data</title>
@@ -42,47 +96,6 @@
         
         
         <category>UndeadData</category>
-        
-      </item>
-    
-      <item>
-        <title>Enabling Fallout 4 Mods</title>
-        <description>&lt;p&gt;When making a custom skin for the popular game: &lt;a href=&quot;http://store.steampowered.com/agecheck/app/377160/&quot;&gt;Fallout 4&lt;/a&gt; I found that the mod would not load into the game until I tweaked a few things. Thanks to &lt;a href=&quot;http://www.nexusmods.com/fallout4/videos/87/?&quot;&gt;this post&lt;/a&gt; I found the values I needed to change in order to get things working.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;These edits are required for installed mods to work in your game.
-You will need to add the following line to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Fallout4Prefs.ini&lt;/code&gt; file below the section marked&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Launcher]:
-bEnableFileSelection=1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You will need to change the following line in &lt;code class=&quot;highlighter-rouge&quot;&gt;Fallout4.ini&lt;/code&gt;:&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sResourceDataDirsFinal=STRINGS\, TEXTURES\, MUSIC\, SOUND\, INTERFACE\, MESHES\, PROGRAMS\, MATERIALS\, LODSETTINGS\, VIS\, MISC\, SCRIPTS\, SHADERSFX\
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Now to wrap things up within those folders will be where your mods will eventually go. Head over to the &lt;a href=&quot;http://www.nexusmods.com/fallout4/&quot;&gt;Nexus Community&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Dec 2015 19:02:05 +0000</pubDate>
-        <link>http://derfoh.github.io/tips/2015/12/17/enabling-fallout-4-mods.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/17/enabling-fallout-4-mods.html</guid>
-        
-        <category>video games</category>
-        
-        <category>mods</category>
-        
-        <category>tips</category>
-        
-        <category>fallout 4</category>
-        
-        
-        <category>tips</category>
         
       </item>
     
