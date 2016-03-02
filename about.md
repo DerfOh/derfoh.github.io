@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Under Water](../images/underwater.png){:height="50%"}
+![Under Water](../images/underwater.png){:height="50%" width="50%"}
 
 Much of my experience is derived from my daily tinkering with computers and code, my enthusiasm enables me to pick up on complex ideas at a very fast pace. I am currently enrolled in the Bachelor's program in Computer Information Systems at the University of Michigan. I have had an active education in the various forms of programming languages including (but not limited to) COBOL, C++, Python, Java, HTML, and CSS. As well as the usage of a wide range of computer systems and applications.
 
