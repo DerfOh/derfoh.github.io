@@ -233,10 +233,15 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io"
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_includes",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_layouts",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_sass"
 	],
 	"file_history":
 	[
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/about.md",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/GadgetSearch.md",
 		"/C/Users/Fredrick/AppData/Roaming/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/blog.sublime-project",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_drafts/generalPost.md",
@@ -359,12 +364,10 @@
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_posts/2015-12-15-hello-world.md",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_posts/2015-12-15-getting-things-going.md",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_posts/2015-12-15-archive-page-added.md",
-		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/about.md",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/index.html",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_includes/footer.html",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/Gemfile",
-		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_config.yml",
-		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_includes/head.html"
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_config.yml"
 	],
 	"find":
 	{
@@ -583,6 +586,11 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "C:\\Program Files\\Sublime Text 3"
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
