@@ -19,5 +19,5 @@ comments: True
 
 * Where do I get it?
   * The script can be obtained from one of two sources:
-  	*[GitHub](https://github.com/DerfOh/EnableFalloutModsScript)
-  	*[Nexus](http://www.nexusmods.com/fallout4/mods/10496/)
+  	* [GitHub](https://github.com/DerfOh/EnableFalloutModsScript)
+  	* [Nexus](http://www.nexusmods.com/fallout4/mods/10496/)

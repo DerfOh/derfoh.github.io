@@ -6,9 +6,52 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Mar 2016 05:46:15 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2016 05:46:15 +0000</lastBuildDate>
+    <pubDate>Thu, 03 Mar 2016 06:11:39 +0000</pubDate>
+    <lastBuildDate>Thu, 03 Mar 2016 06:11:39 +0000</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Fallout 4 Enable Mods Script</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;What is the application?
+    &lt;ul&gt;
+      &lt;li&gt;The application is a small script that when run properly on a fresh install of Fallout 4 enables the user to start downloading and installing modified content into their game. I made this script because I was tired of having to do this over and over for myself as well as friends and family. This script provides a simple set of instructions to the user directing them to place it in the appropriate folder and then run it. It then makes the appropriate changes to the ini files of the game to allow modified content to be loaded properly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What platform is it for?
+    &lt;ul&gt;
+      &lt;li&gt;This script is only compatible with Windows operating systems.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What did you learn from making this?
+    &lt;ul&gt;
+      &lt;li&gt;While I understood these things it provided an oportunity for me to reivew how to copy, make, and edit files using a batch script.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Where do I get it?
+    &lt;ul&gt;
+      &lt;li&gt;The script can be obtained from one of two sources:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/DerfOh/EnableFalloutModsScript&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://www.nexusmods.com/fallout4/mods/10496/&quot;&gt;Nexus&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 03 Mar 2016 00:54:20 +0000</pubDate>
+        <link>http://derfoh.github.io/2016/03/03/fallout-4-enable-mods-script.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/2016/03/03/fallout-4-enable-mods-script.html</guid>
+        
+        <category>projects</category>
+        
+        <category>video games</category>
+        
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>Changes to 841g site</title>
@@ -290,25 +333,6 @@ Simply open powershell as an administrator and run the following commands then r
         <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</guid>
         
         <category>theming</category>
-        
-        
-        <category>check-in</category>
-        
-      </item>
-    
-      <item>
-        <title>Hello World!</title>
-        <description>&lt;p&gt;Hello! This is my first post to my code blog.&lt;/p&gt;
-
-&lt;p&gt;Setting up this blog with Jekyll was somewhat difficult overall it took me a few hours to figure out that I was missing half of the files I needed for this to work.&lt;/p&gt;
-
-&lt;p&gt;With a little help from a lot of googling though I finally think I have the basics down and at least now I can make posts. YAY!!!&lt;/p&gt;
-
-&lt;p&gt;Next up is getting this thing themed.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Dec 2015 02:30:21 +0000</pubDate>
-        <link>http://derfoh.github.io/check-in/2015/12/15/hello-world.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/hello-world.html</guid>
         
         
         <category>check-in</category>
