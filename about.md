@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
+{::comment}
 ![Under Water](../images/underwater.png){:height="50%" width="50%"}  
+{:/comment}
 
 # Fredrick Paulin
 

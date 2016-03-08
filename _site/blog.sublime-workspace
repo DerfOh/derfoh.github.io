@@ -158,7 +158,7 @@
 			"file": "about.md",
 			"settings":
 			{
-				"buffer_size": 3476,
+				"buffer_size": 6274,
 				"line_ending": "Windows"
 			}
 		}
@@ -171,9 +171,17 @@
 	"command_palette":
 	{
 		"height": 104.0,
-		"last_filter": "git push",
+		"last_filter": "spell",
 		"selected_items":
 		[
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"pack	",
+				"Package Control: Install Package"
+			],
 			[
 				"git push",
 				"Git: Push Current Branch"
@@ -227,10 +235,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"spell",
-				"Google Spell Check"
-			],
-			[
 				"bookmark",
 				"Bookmarks: Select Next"
 			],
@@ -277,10 +281,14 @@
 	"expanded_folders":
 	[
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io",
-		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_posts"
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_site",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_site/about",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_site/css",
+		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_site/gadgetsearch"
 	],
 	"file_history":
 	[
+		"/C/Users/Fredrick/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/OneDrive/School/_Past Classes/Database Design/Homework/Project/site/index.php",
 		"/C/Users/Fredrick/Downloads/CacoCloud.tar/CacoCloud/README.md",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_posts/2016-03-03-fallout-4-enable-mods-script.markdown",
@@ -297,7 +305,6 @@
 		"/C/Users/Fredrick/OneDrive/School/Software Engineering CSC-382/courseSchedule.txt",
 		"/C/Users/Fredrick/AppData/Roaming/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
 		"/C/Users/Fredrick/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
-		"/C/Users/Fredrick/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Fredrick/Documents/GitHub/derfoh.github.io/_posts/2015-12-14-welcome-to-jekyll.markdown",
 		"/C/Program Files/OpenVPN/config/client1.ovpn",
 		"/C/Users/Fredrick/Dropbox/phoneKeys/phone.ovpn",
@@ -428,6 +435,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"####\n",
+			"row",
 			"commands",
 			"` ",
 			"  ",
@@ -588,15 +597,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3476,
+						"buffer_size": 6274,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2906,
-								2906
+								157,
+								157
 							]
 						],
 						"settings":
@@ -607,10 +616,12 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
 							"vintage":
 							{
-								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_glue_until_normal_mode": true,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
 								"action": null,
 								"action_count": "",
-								"mode": "mode_normal",
+								"mode": "mode_insert",
 								"motion": null,
 								"motion_count": "",
 								"must_capture_register_name": false,
@@ -618,7 +629,7 @@
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 0
+								"xpos": 23
 							}
 						},
 						"translation.x": 0.0,
@@ -722,7 +733,7 @@
 		"_vintageous_reset_during_init": true,
 		"vintage":
 		{
-			"_cmdline_cd": "D:\\OneDrive\\School\\_Past Classes\\Database Design\\Homework\\Project\\site"
+			"_cmdline_cd": "C:\\Users\\Fredrick\\Documents\\GitHub\\derfoh.github.io"
 		}
 	},
 	"show_minimap": true,
