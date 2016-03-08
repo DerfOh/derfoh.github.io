@@ -4,9 +4,12 @@ title: About
 permalink: /about/
 ---
 
-#![Under Water](../images/underwater.png){:height="50%" width="50%"}  Fredrick Paulin
+![Under Water](../images/underwater.png){:height="50%" width="50%"}  
+
+# Fredrick Paulin
 
 -----
+<br />
 
 # Software Developer
 * Upcoming graduate majoring in Computer Information Systems from the University of Michigan
