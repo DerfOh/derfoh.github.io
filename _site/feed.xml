@@ -6,9 +6,30 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Mar 2016 22:30:22 +0000</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2016 22:30:22 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2016 05:23:49 +0100</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2016 05:23:49 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Added School Projects to GitHub</title>
+        <description>&lt;p&gt;Added a lot of my school programming projects to my GitHub.&lt;/p&gt;
+
+&lt;p&gt;Check out the repository here: &lt;a href=&quot;https://github.com/DerfOh/School-Programming-Projects&quot;&gt;School-Programming-Projects&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is also worth mentioning that I uploaded the code for  &lt;a href=&quot;http://undeaddata.derfoh.me&quot;&gt;Undead Data&lt;/a&gt; to a repository as well. I had to figure out the GNU GPL for this one. I hope if there is any issue with how I implemented the license into the source someone will mention it to me.&lt;/p&gt;
+
+&lt;p&gt;The intent behind licensing with the GPL was so that everyone who worked on the project could get equal credit for their contributions if any of us decide to use it for a portfolio or application that might result in a change in the intellectual property. My group members and I put a lot of work into getting everything together for the site to demonstrate our mastery of the knowledge gained from out database design course.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Mar 2016 01:05:51 +0100</pubDate>
+        <link>http://derfoh.github.io/check-in/2016/03/18/school-projects-now-on-github.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/03/18/school-projects-now-on-github.html</guid>
+        
+        <category>projects</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
     
       <item>
         <title>Fallout 4 Enable Mods Script</title>
@@ -321,21 +342,6 @@ Simply open powershell as an administrator and run the following commands then r
         
         
         <category>tips</category>
-        
-      </item>
-    
-      <item>
-        <title>Getting Things Going</title>
-        <description>&lt;p&gt;I got most of the config worked out for this site. Jekyll has been an interesting experience getting set up. I also had to figure out how to set up the default config for a very useful sublime pluggin. Its worth checking out if you use Sublime text as your editor. It is called: &lt;a href=&quot;https://packagecontrol.io/packages/Jekyll&quot;&gt;sublime-Jekyll&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Dec 2015 03:31:06 +0000</pubDate>
-        <link>http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/getting-things-going.html</guid>
-        
-        <category>theming</category>
-        
-        
-        <category>check-in</category>
         
       </item>
     
