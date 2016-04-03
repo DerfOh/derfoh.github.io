@@ -6,9 +6,52 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Mar 2016 05:23:49 +0100</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2016 05:23:49 +0100</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <pubDate>Sun, 03 Apr 2016 03:43:21 +0100</pubDate>
+    <lastBuildDate>Sun, 03 Apr 2016 03:43:21 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Raspberry Pi Projects</title>
+        <description>&lt;p&gt;If you live under a rock or just do not know what a Raspberry Pi is it is a small “Micro” computer that is relatively low cost that runs Linux operating systems such as Debian using an ARM processor.&lt;/p&gt;
+
+&lt;p&gt;I get asked a lot about what I use my Raspberry Pis for so I figured I would compile a list of the different projects and applications that I run on them.&lt;/p&gt;
+
+&lt;p&gt;I currently own 4 Pis. Two are Raspberry Pi 2s, One Raspberry Pi 1, and one Raspberry Pi 0.&lt;/p&gt;
+
+&lt;p&gt;For the Raspberry Pi 2s I use one as a dedicated VPN end point into my home network. The idea is that when I’m on the road I want to be able to tunnel my traffic through an encrypted connection back to my house then out to the Internet in an attempt to keep potential malicious actors from sniffing my traffic and doing what they will with it. I also have that Pi set up as a LAMP server for when I need to test a deployment of a website before I publish it onto the Internet. Along with the LAMP server and VPN I also have it set up as a client for the popular Lounge IRC client for when I need to get into an IRC room to ask questions or contribute to a conversation. Finally the last thing I use this Pi for is as a custom DNS server that blocks advertisements for all the devices on my home network using the Pi-Hole application.&lt;/p&gt;
+
+&lt;p&gt;The other Pi 2 is being used as a Retro Pi/Kodi System. Essentially it is a conglomeration of many popular video game system emulators for when I am seeking out some of that sweet nostalgic gaming from yesteryear. Kodi also adds a very flexible and powerful media center application. I use this for a mainly watching Movies/TV, youtube, twitch streams, and podcasts. It also acts as an RSS reader and keeps me informed on what the weather is in a few different locations. This Pi also runs an SMB server so that any device on the network can access any saved media files on it for their own.&lt;/p&gt;
+
+&lt;p&gt;The Raspberry Pi 1 is being used as a hub for a couple cameras. I use this as a home security system that takes still images whenever it detects motion. It then sends me a digest in an email daily of what it captured.&lt;/p&gt;
+
+&lt;p&gt;Finally I am still working on what I want to do with the Raspberry Pi 0. I have played with the idea of using it as an on the go DNS black-hole for blocking advertisements when I’m on the road. I’m sure I will come up with a practical use for it that capitalizes on its extremely small form factor.&lt;/p&gt;
+
+&lt;p&gt;Here’s a compiled list of all the tools/applications used with the pis:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Nyr/openvpn-install&quot;&gt;Open VPN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://elinux.org/RPi_A_Simple_Wheezy_LAMP_install&quot;&gt;PI LAMP Server Tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/thelounge/lounge&quot;&gt;The Lounge IRC Client&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pi-Hole Ad Blocker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/retropie/retropie-setup/wiki&quot;&gt;Retro Pi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mymediaexperience.com/raspberry-pi-xbmc-with-raspbmc/&quot;&gt;Kodi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian&quot;&gt;Motion Eye&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have any further questions regarding my setup feel free to leave me a comment below!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Apr 2016 23:41:12 +0100</pubDate>
+        <link>http://derfoh.github.io/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html</guid>
+        
+        <category>projects</category>
+        
+        
+        <category>Raspberry Pi</category>
+        
+        <category>Projects</category>
+        
+      </item>
     
       <item>
         <title>Added School Projects to GitHub</title>
@@ -319,29 +362,6 @@ So the table looks somewhat like this:&lt;/p&gt;
         
         
         <category>check-in</category>
-        
-      </item>
-    
-      <item>
-        <title>Remapping Caps to CTRL</title>
-        <description>&lt;p&gt;Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.
-Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$hexified&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00&quot;&lt;/span&gt;.Split&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;,&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; | % &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0x&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$kbLayout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;HKLM:\System\CurrentControlSet\Control\Keyboard Layout&#39;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;New-ItemProperty&lt;/span&gt; -Path &lt;span class=&quot;nv&quot;&gt;$kbLayout&lt;/span&gt; -Name &lt;span class=&quot;s2&quot;&gt;&quot;Scancode Map&quot;&lt;/span&gt; -PropertyType Binary -Value &lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]]&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexified&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-        <pubDate>Tue, 15 Dec 2015 12:29:38 +0000</pubDate>
-        <link>http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html</guid>
-        
-        <category>keymapping</category>
-        
-        <category>tips</category>
-        
-        
-        <category>tips</category>
         
       </item>
     

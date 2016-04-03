@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Coding With The Flow</title>
-  <meta name="description" content="The personal encounters I have in my experiences as a programmer, and tinkerer.
-">
+  <title>Raspberry Pi Projects</title>
+  <meta name="description" content="If you live under a rock or just do not know what a Raspberry Pi is it is a small “Micro” computer that is relatively low cost that runs Linux operating syst...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/">
+  <link rel="canonical" href="http://derfoh.github.io/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html">
   <link rel="alternate" type="application/rss+xml" title="Coding With The Flow" href="http://derfoh.github.io/feed.xml">
   <!--
 <script type="text/javascript">
@@ -85,71 +84,67 @@ ga('send', 'pageview');
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-<table>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <td><h1 class="page-heading">Recent Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Raspberry Pi Projects</h1>
+    <p class="post-meta"><time datetime="2016-04-02T23:41:12+01:00" itemprop="datePublished">Apr 2, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 2, 2016</span>
 
-        <h2>
-          <a class="post-link" href="/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html" title="If you live under a rock or just do not...">Raspberry Pi Projects</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 18, 2016</span>
+  <!-- Begin comments -->
+  <div class="post-content" itemprop="articleBody">
+    <p>If you live under a rock or just do not know what a Raspberry Pi is it is a small “Micro” computer that is relatively low cost that runs Linux operating systems such as Debian using an ARM processor.</p>
 
-        <h2>
-          <a class="post-link" href="/check-in/2016/03/18/school-projects-now-on-github.html" title="Added a lot of my school programming projects to my...">Added School Projects to GitHub</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 3, 2016</span>
+<p>I get asked a lot about what I use my Raspberry Pis for so I figured I would compile a list of the different projects and applications that I run on them.</p>
 
-        <h2>
-          <a class="post-link" href="/2016/03/03/fallout-4-enable-mods-script.html" title="What is the application? The application is a small script...">Fallout 4 Enable Mods Script</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 17, 2016</span>
+<p>I currently own 4 Pis. Two are Raspberry Pi 2s, One Raspberry Pi 1, and one Raspberry Pi 0.</p>
 
-        <h2>
-          <a class="post-link" href="/check-in/2016/02/17/changes-to-841g-site.html" title="Lately I have been working on getting a website I...">Changes to 841g site</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 31, 2015</span>
+<p>For the Raspberry Pi 2s I use one as a dedicated VPN end point into my home network. The idea is that when I’m on the road I want to be able to tunnel my traffic through an encrypted connection back to my house then out to the Internet in an attempt to keep potential malicious actors from sniffing my traffic and doing what they will with it. I also have that Pi set up as a LAMP server for when I need to test a deployment of a website before I publish it onto the Internet. Along with the LAMP server and VPN I also have it set up as a client for the popular Lounge IRC client for when I need to get into an IRC room to ask questions or contribute to a conversation. Finally the last thing I use this Pi for is as a custom DNS server that blocks advertisements for all the devices on my home network using the Pi-Hole application.</p>
 
-        <h2>
-          <a class="post-link" href="/tips/2015/12/31/changing-default-git-shell.html" title="Had some trouble finding an answer to this, maybe I...">Changing Default Git Shell</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>The other Pi 2 is being used as a Retro Pi/Kodi System. Essentially it is a conglomeration of many popular video game system emulators for when I am seeking out some of that sweet nostalgic gaming from yesteryear. Kodi also adds a very flexible and powerful media center application. I use this for a mainly watching Movies/TV, youtube, twitch streams, and podcasts. It also acts as an RSS reader and keeps me informed on what the weather is in a few different locations. This Pi also runs an SMB server so that any device on the network can access any saved media files on it for their own.</p>
 
-  <a href ="/archive/" >More Posts</a>
-  </td>
+<p>The Raspberry Pi 1 is being used as a hub for a couple cameras. I use this as a home security system that takes still images whenever it detects motion. It then sends me a digest in an email daily of what it captured.</p>
 
-  <td width="50%">
-    <a href ="/about/" ><img src="/images/avatar.png"  /></a>
+<p>Finally I am still working on what I want to do with the Raspberry Pi 0. I have played with the idea of using it as an on the go DNS black-hole for blocking advertisements when I’m on the road. I’m sure I will come up with a practical use for it that capitalizes on its extremely small form factor.</p>
 
-    <p class="page-content">
-        Welcome to my code log! My Name is Fredrick but I also go by DerfOh in various communities. I use this blog as my home for my projects and meandering thoughts as well as a tool to chronicle my journey through the world of programming, software, and technology. I hope that in some way this will be a useful resource for someone who may be starting their own journey with coding.
-    </p> 
-  </td>
+<p>Here’s a compiled list of all the tools/applications used with the pis:</p>
 
-</table>
+<ul>
+  <li><a href="https://github.com/Nyr/openvpn-install">Open VPN</a></li>
+  <li><a href="http://elinux.org/RPi_A_Simple_Wheezy_LAMP_install">PI LAMP Server Tutorial</a></li>
+  <li><a href="https://github.com/thelounge/lounge">The Lounge IRC Client</a></li>
+  <li><a href="https://pi-hole.net/">Pi-Hole Ad Blocker</a></li>
+  <li><a href="https://github.com/retropie/retropie-setup/wiki">Retro Pi</a></li>
+  <li><a href="http://mymediaexperience.com/raspberry-pi-xbmc-with-raspbmc/">Kodi</a></li>
+  <li><a href="https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian">Motion Eye</a></li>
+</ul>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>If you have any further questions regarding my setup feel free to leave me a comment below!</p>
 
-</div>
+  </div>
+
+	
+		<div id="disqus_thread"></div>
+		    <script type="text/javascript">
+		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		        var disqus_shortname = 'fredrickp'; // required: replace example with your forum shortname
+		        //var disqus_developer = 1; // Comment out when the site is live
+		        var disqus_identifier = "/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html";
+
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+
+
+</article>
 
       </div>
     </div>
