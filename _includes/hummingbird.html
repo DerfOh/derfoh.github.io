@@ -1,0 +1,10 @@
+<script>
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    xhr.open('POST', 'https://api-cb8f7eb8b767e0ea79d94fee770bd02b.oasis.sandstorm.io/t', true);
+    xhr.setRequestHeader('Authorization',
+                         'Bearer pP3eAexHZomTE10uXhNcHQzeeE6STFL54_nfpHlYB8w');
+    xhr.setRequestHeader('X-Sandstorm-Passthrough', 'address');
+    xhr.send(null);
+  }
+</script>
