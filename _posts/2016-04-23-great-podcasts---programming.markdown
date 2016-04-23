@@ -3,7 +3,7 @@ title: Great Podcasts - Programming
 layout: post
 categories: ["check-in"]
 tags: ["podcasts", "tips", "entertainment"]
-date: 
+date: 2016-04-23 16:48:20 
 published: True
 comments: True
 ---
