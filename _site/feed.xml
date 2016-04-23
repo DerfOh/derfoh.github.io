@@ -6,9 +6,60 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Apr 2016 22:35:26 +0100</pubDate>
-    <lastBuildDate>Sun, 17 Apr 2016 22:35:26 +0100</lastBuildDate>
+    <pubDate>Sat, 23 Apr 2016 21:37:47 +0100</pubDate>
+    <lastBuildDate>Sat, 23 Apr 2016 21:37:47 +0100</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Great Podcasts - Programming</title>
+        <description>&lt;p&gt;As I spend time working on my projects I often need something to fill the backround noise. One of the ways I do this is by listening to podcasts. I feel that podcasts while entertaining also provide some educational value and allow me to not get too buried by my focus while learning something new. Not only do these podcasts enlighten me to new ideas and topics but also really help to supplement the long commute that I have.&lt;/p&gt;
+
+&lt;p&gt;To kick off my series of posts I will post the programming podcasts that I listen to while I drive and while I work.&lt;/p&gt;
+
+&lt;h1 id=&quot;programming&quot;&gt;Programming&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://developertea.com&quot;&gt;Developer Tea&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Great podcast for anyone interested in being a productive programmer. They offer tips and techniques for getting things done and being productive in your day as a programmer. The episodes are relatively short (20-30 minutes), and typically there are 1 to 2 episodes per week. Jonathan often interviews industry experts and gets their insight and opinions on a multitude of issues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;www.codenewbie.org&quot;&gt;Code Newbie&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Yet another great podcast for new programmers. Like developer tea, Saran interviews many industry professionals about their skills and techniques. This podcast goes on a bit more about the culture of the tech industry, it hits on a multitude of issues from equality in the workplace and in the coding community. Episodes are typically 20-30 minutes but sometimes are longer when it’s necessary. New episodes tend to come out on a weekly basis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.dotnetrocks.com/&quot;&gt;.Net Rocks&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;A great podcast for more than just .net. While a lot of the focus is on Windows application development it spans a broad set of frameworks and coding methodologies as well as hitting on the latest news in the programming and Windows world. Episodes tend to be longer, around an hour long and typically come out on a weekly basis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.programmingthrowdown.com/&quot;&gt;Programming Throwdown&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;This podcast spans a wide variety of different languages and technologies in the field. Anything from python to tamper protection are covered in this podcast and often times the hosts go into great detail on the things they plan on talking about. Episodes are typically an hour long but sometimes can be shorter or longer depending on the topic being covered and they generally come out on a monthly basis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://5by5.tv/changelog&quot;&gt;The Changelog&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Great podcast that goes over a variety of topics in the open source world. Adam and Jerod go over the newest topics and news and do an awesome job of highlighting what is popular in the open source coding scene. This podcast is also a great resource on information on amazing self hosted applications as well as great open source tools. Worth a listen if you’re interested in how everything works in land of open source software. Episodes are typically just over an hour long and come out on a bi-monthly basis.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 +0100</pubDate>
+        <link>http://derfoh.github.io/check-in/2016/04/23/great-podcasts-programming.html</link>
+        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/04/23/great-podcasts-programming.html</guid>
+        
+        <category>podcasts</category>
+        
+        <category>tips</category>
+        
+        <category>entertainment</category>
+        
+        
+        <category>check-in</category>
+        
+      </item>
     
       <item>
         <title>Raspberry Pi Projects</title>
@@ -338,25 +389,6 @@ So the table looks somewhat like this:&lt;/p&gt;
         <pubDate>Wed, 16 Dec 2015 19:43:53 +0000</pubDate>
         <link>http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</link>
         <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/16/working-with-blog-theme.html</guid>
-        
-        <category>theming</category>
-        
-        
-        <category>check-in</category>
-        
-      </item>
-    
-      <item>
-        <title>Archive page added!</title>
-        <description>&lt;p&gt;I found an easy way to implement an archive page into my Jekyll blog. Thanks to the author over at &lt;a href=&quot;http://reyhan.org&quot;&gt;reyhan.org&lt;/a&gt; I now have a simple archive page for the posts that I make to this log.&lt;/p&gt;
-
-&lt;p&gt;I had to add a file to my &lt;code&gt;_layouts&lt;/code&gt; directory called &lt;code&gt;archive.html&lt;/code&gt; that had the code from &lt;a href=&quot;http://reyhan.org/2013/03/jekyll-archive-without-plugins.html&quot;&gt;this site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then I added the archive.md so that the link would show up in the header. Next up I will be setting up analytics, and making it so that the front page is only limited to 5 posts.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Dec 2015 17:24:50 +0000</pubDate>
-        <link>http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2015/12/15/archive-page-added.html</guid>
         
         <category>theming</category>
         
