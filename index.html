@@ -3,32 +3,39 @@ layout: default
 ---
 
 <div class="home">
-<table>
-
-  <td><h1 class="page-heading">Recent Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.content | strip_html | truncatewords:10}}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <a href ="/archive/" >More Posts</a>
-  </td>
+<table cellpadding="20">
 
   <td width="50%">
     <a href ="/about/" ><img src="/images/avatar.png"  /></a>
 
     <p class="page-content">
-        Welcome to my code log! My Name is Fredrick but I also go by DerfOh in various communities. I use this blog as my home for my projects and meandering thoughts as well as a tool to chronicle my journey through the world of programming, software, and technology. I hope that in some way this will be a useful resource for someone who may be starting their own journey with coding.
+        Welcome to blog! My Name is Fredrick but I also go by DerfOh in various communities. I use this blog as my home for my projects and meandering thoughts as well as a tool to chronicle my journey through the world of programming, software, and technology. I hope that in some way this will be a useful resource for someone who may be starting their own journey with coding.
+    </p>
+    <p>
+    <a class="twitter-timeline" href="https://twitter.com/DerfOh" data-widget-id="732307716429905920">Tweets by @DerfOh</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </p> 
-  </td>
+    </td>
+    
+    <td>
+
+
+    <h1 class="page-heading">Recent Posts</h1>
+
+      <ul class="post-list">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.content | strip_html | truncatewords:10}}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <a href ="/archive/" >More Posts</a>
+    </td>
 
 </table>
 
