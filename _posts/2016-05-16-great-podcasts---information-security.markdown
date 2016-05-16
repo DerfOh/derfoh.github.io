@@ -1,10 +1,10 @@
 ---
-title: Great Podcasts - IT
+title: Great Podcasts - IT & Security
 layout: post
 categories: ["check-in"]
 tags: ["podcasts", "tips", "entertainment"]
-date: 
-published: False
+date: 2016-05-16 16:17:04 
+published: True
 comments: True
 ---
 
