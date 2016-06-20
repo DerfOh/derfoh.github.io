@@ -8,7 +8,8 @@ published: True
 comments: True
 ---
 
-##[Check out Vidjatrest here](http://vidjatrest.codingwiththeflow.com)##
+[Check out Vidjatrest here](http://vidjatrest.codingwiththeflow.com)
+======
 
 * What is the application?
   * The application is a pinterest-like application built with Ruby for sharing screenshots and gaming related photos.
