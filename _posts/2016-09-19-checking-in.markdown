@@ -2,14 +2,15 @@
 layout: post
 title: "Checking in"
 categories: check-in
-tags: 
-date: 2015-12-15 03:31:06
+tags:
+date: 2016-09-19 12:31:06
 comments: True
+published: True
 ---
 
 # Just checking in
 
-I haven't had a whole lot of time to check in lateley due to being wrapped up in a lot of different things throughout the summer.
+I haven't had a whole lot of time to check in lately due to being wrapped up in a lot of different things throughout the summer.
 
 Posts will be less frequent until more time opens up in my schedule.
 

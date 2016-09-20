@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Remapping Caps to CTRL</title>
-  <meta name="description" content="Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.Simply open powershell as an administrator and run t...">
+  <title>Checking in</title>
+  <meta name="description" content="Just checking in">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/tips/2015/12/15/remapping-caps-to-ctrl.html">
+  <link rel="canonical" href="http://derfoh.github.io/check-in/2016/09/19/checking-in.html">
   <link rel="alternate" type="application/rss+xml" title="Coding With The Flow" href="http://derfoh.github.io/feed.xml">
   <!--
 <script type="text/javascript">
@@ -97,20 +97,20 @@ ga('send', 'pageview');
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Remapping Caps to CTRL</h1>
-    <p class="post-meta"><time datetime="2015-12-15T12:29:38+00:00" itemprop="datePublished">Dec 15, 2015</time></p>
+    <h1 class="post-title" itemprop="name headline">Checking in</h1>
+    <p class="post-meta"><time datetime="2016-09-19T13:31:06+01:00" itemprop="datePublished">Sep 19, 2016</time></p>
   </header>
 
 
   <!-- Begin comments -->
   <div class="post-content" itemprop="articleBody">
-    <p>Found this helpful tip in a stack overflow after trying to get the caps lock key disabled on my keyboard.<br />
-Simply open powershell as an administrator and run the following commands then reboot. Your annoying caps lock key will be remapped to a much more useful control key.</p>
+    <h1 id="just-checking-in">Just checking in</h1>
 
-<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nv">$hexified</span> <span class="o">=</span> <span class="s2">"00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00"</span>.Split<span class="o">(</span><span class="s1">','</span><span class="o">)</span> | % <span class="o">{</span> <span class="s2">"0x</span><span class="nv">$_</span><span class="s2">"</span><span class="o">}</span>
-<span class="nv">$kbLayout</span> <span class="o">=</span> <span class="s1">'HKLM:\System\CurrentControlSet\Control\Keyboard Layout'</span>
-<span class="nb">New-ItemProperty</span> -Path <span class="nv">$kbLayout</span> -Name <span class="s2">"Scancode Map"</span> -PropertyType Binary -Value <span class="o">([</span><span class="kt">byte</span><span class="o">[]]</span><span class="nv">$hexified</span><span class="o">)</span></code></pre></figure>
+<p>I haven’t had a whole lot of time to check in lately due to being wrapped up in a lot of different things throughout the summer.</p>
 
+<p>Posts will be less frequent until more time opens up in my schedule.</p>
+
+<p>My summer internship brought me further into the world of DevOps and I should be making a post soon about it!</p>
 
   </div>
 
@@ -120,7 +120,7 @@ Simply open powershell as an administrator and run the following commands then r
 		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 		        var disqus_shortname = 'fredrickp'; // required: replace example with your forum shortname
 		        //var disqus_developer = 1; // Comment out when the site is live
-		        var disqus_identifier = "/tips/2015/12/15/remapping-caps-to-ctrl.html";
+		        var disqus_identifier = "/check-in/2016/09/19/checking-in.html";
 
 		        /* * * DON'T EDIT BELOW THIS LINE * * */
 		        (function() {
