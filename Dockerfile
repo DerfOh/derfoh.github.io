@@ -30,7 +30,9 @@ FROM phusion/baseimage:0.9.18
     --no-rdoc --no-ri
 
   COPY build.sh .
-
+  
+  EXPOSE 4000
+  
   RUN chmod +x build.sh
 
   CMD ["./build.sh"]
