@@ -6,8 +6,8 @@
 </description>
     <link>http://derfoh.github.io/</link>
     <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Nov 2016 16:49:13 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Nov 2016 16:49:13 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Nov 2016 16:51:13 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Nov 2016 16:51:13 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -28,7 +28,7 @@ The pluggins are really where atom shines as you can star these pluggins on thei
 
 &lt;p&gt;You can see all of the pluggins I use by checking out my &lt;a href=&quot;https://atom.io/users/DerfOh/stars&quot;&gt;atom.io profile&lt;/a&gt;. Many of them are related to specific projects that I am working on. Most notably the ones that I have for golang do things such as code completion, automated testing, linting, go to definitions, and a variety of other amazing features that generally make developing go code a breeze.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/VimIMage.png&quot; alt=&quot;VimImage&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/VimImage.png&quot; alt=&quot;VimImage&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vim:
 I would be remiss if I didn’t take the time to write something about Vim (or vim-enhanced). If Atom was to be my car, vim would be my skateboard. I use the editor almost as much as Atom but generally in smaller increments and swift actions from the command line. It is frequently how I compose my commit messages and any time I need to work on a configuration or just a one off file I often reach for Vim as it is quicker for me and I don’t have to rely on Atom loading up, being installed, or having the proper configurations. While I have spent the time playing with a variety of plugins for Vim, I simply do not need to add the extra cruft to an already perfectly engineered tool.&lt;/p&gt;

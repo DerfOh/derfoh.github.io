@@ -26,7 +26,7 @@ The pluggins are really where atom shines as you can star these pluggins on thei
 You can see all of the pluggins I use by checking out my [atom.io profile](https://atom.io/users/DerfOh/stars). Many of them are related to specific projects that I am working on. Most notably the ones that I have for golang do things such as code completion, automated testing, linting, go to definitions, and a variety of other amazing features that generally make developing go code a breeze.
 
 
-![VimImage](/images/posts/VimIMage.png)
+![VimImage](/images/posts/VimImage.png)
 
 Vim:
 I would be remiss if I didn't take the time to write something about Vim (or vim-enhanced). If Atom was to be my car, vim would be my skateboard. I use the editor almost as much as Atom but generally in smaller increments and swift actions from the command line. It is frequently how I compose my commit messages and any time I need to work on a configuration or just a one off file I often reach for Vim as it is quicker for me and I don't have to rely on Atom loading up, being installed, or having the proper configurations. While I have spent the time playing with a variety of plugins for Vim, I simply do not need to add the extra cruft to an already perfectly engineered tool.
