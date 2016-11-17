@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Checking in</title>
-  <meta name="description" content="Just checking in">
+  <title>My Windows + Linux Toolkit</title>
+  <meta name="description" content="IntroLately I have been developing extensive amounts of golang code for an API that I am writing for a course for my Project management course and the code i...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/check-in/2016/09/19/checking-in.html">
+  <link rel="canonical" href="http://derfoh.github.io/check-in/reflections/2016/11/13/windows-and-linux-development.html">
   <link rel="alternate" type="application/rss+xml" title="Coding With The Flow" href="http://derfoh.github.io/feed.xml">
   <!--
 <script type="text/javascript">
@@ -97,20 +97,58 @@ ga('send', 'pageview');
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Checking in</h1>
-    <p class="post-meta"><time datetime="2016-09-19T13:31:06+01:00" itemprop="datePublished">Sep 19, 2016</time></p>
+    <h1 class="post-title" itemprop="name headline">My Windows + Linux Toolkit</h1>
+    <p class="post-meta"><time datetime="2016-11-13T14:11:51+00:00" itemprop="datePublished">Nov 13, 2016</time></p>
   </header>
 
 
   <!-- Begin comments -->
   <div class="post-content" itemprop="articleBody">
-    <h1 id="just-checking-in">Just checking in</h1>
+    <h2 id="intro">Intro</h2>
+<p>Lately I have been developing extensive amounts of golang code for an API that I am writing for a course for my Project management course and the code is to be deployed to a linux VPS. I also have started up a new job as a part time Linux Systems Administrator and many of my projects involve implementing LDAP login to a Linux based web applications. Due to both of these things I must constantly jump between Windows and Linux on a daily basis.</p>
 
-<p>I haven’t had a whole lot of time to check in lately due to being wrapped up in a lot of different things throughout the summer.</p>
+<p>The API sits on the same VPS as a SQL server and interacts with it by sending database instructions to it and returns JSON data to the client that is sending the requests. <a href="http://github.com/derfoh/compromise">It’s still under development but the project can be found here.</a></p>
 
-<p>Posts will be less frequent until more time opens up in my schedule.</p>
+<h2 id="the-toolkit">The toolkit</h2>
+<p>The goal of this post is to outline the toolkit that I use on a daily basis to work on Linux and Windows consecutively.</p>
 
-<p>My summer internship brought me further into the world of DevOps and I should be making a post soon about it!</p>
+<p><img src="/images/posts/atomImage.png" alt="AtomImage" /></p>
+
+<p>Atom:
+Atom is my editor of choice here for most of my work in developing and editing configurations. Not only is it cross-platform but has a huge amount of packages that are actively maintained by the community. Oh and did I mention that it is <a href="OpenSource">https://github.com/atom</a>?
+The pluggins are really where atom shines as you can star these pluggins on their central repository <a href="http://atom.io">atom.io</a> and then with one simple command: <code>apm install --stars</code> the command line utility goes out and finds your pluggins and loads them into your environment. Then for any individual configurations I simply use a secret github repo or a hidden gist to get the editor into it’s findal state. The real beauty of being able to do these things is that no matter what system or where I am working from I am actually able to carry over most if not all of my customized editing environment without a lot of the weight that tends to come with other editors and IDEs.</p>
+
+<p>You can see all of the pluggins I use by checking out my <a href="https://atom.io/users/DerfOh/stars">atom.io profile</a>. Many of them are related to specific projects that I am working on. Most notably the ones that I have for golang do things such as code completion, automated testing, linting, go to definitions, and a variety of other amazing features that generally make developing go code a breeze.</p>
+
+<p><img src="/images/posts/VimImage.png" alt="VimImage" /></p>
+
+<p>Vim:
+I would be remiss if I didn’t take the time to write something about Vim (or vim-enhanced). If Atom was to be my car, vim would be my skateboard. I use the editor almost as much as Atom but generally in smaller increments and swift actions from the command line. It is frequently how I compose my commit messages and any time I need to work on a configuration or just a one off file I often reach for Vim as it is quicker for me and I don’t have to rely on Atom loading up, being installed, or having the proper configurations. While I have spent the time playing with a variety of plugins for Vim, I simply do not need to add the extra cruft to an already perfectly engineered tool.</p>
+
+<p><img src="/images/posts/GitImage.png" alt="GitImage" /></p>
+
+<p>Git and GitHub:
+Git is indispensable not only as a utility for tracking changes, deploying code, and allowing for a collaborative workflow. It also is an awesome way to synchronize your workspace and projects across multiple systems. It seems like more and more I find myself with a terminal open somewhere at any moment on my PC that is sitting in a particular project’s directory.</p>
+
+<p><img src="/images/posts/cmderImage.png" alt="cmderImage" /></p>
+
+<p>cmder:
+cmder is an amazing utility when it comes to using the command line on windows. Not only does it do mintty, it also does bash, powershell, windows cmd, and even ssh. There are multiple tabs you can work from. A million settings to tweak it just how you like it. Plugin support. Cmder even lets you use it in ‘quake mode’ where it comes down from the top of your screen in a fashion that any oldschool PC gamer would appreciate.</p>
+
+<p><img src="/images/posts/MobaImage.png" alt="MobaImage" /></p>
+
+<p>MobaXterm:
+Sometimes keeping track of all my SSH endpoints and keys can be a real pain. MobaXterm acts is an excellent utility that frees me from the grips of PuTTY. I do not use it beyond that function though. I know that even the personal edition does more than I use it for. I really only have use for the personal edition but there is a paid version that allows for a whole extra suite of tools and utilities that can be used as well.</p>
+
+<p><img src="/images/posts/VirtualBoxImage.png" alt="VirtualBoxImage" /></p>
+
+<p>VirtualBox:
+I have had a long love-hate relationship with dual booting between Windows and Linux. I finally have thrown in the towell and adopted a virtualized solution. VirtualBox allows me to take the base image of the distribution that my code will eventually live on and develop specifically to that environment. I can even combine this methodology with vagrant and docker to make a powerful develop and deliver 1-2 punch. I use this design flow especially when I am working on some kind of microservice or other single purpose type application. It is really nice being able to jump between projects just by hopping in and out of virtual machines.</p>
+
+<p><img src="/images/posts/UbuntuImage.png" alt="UbuntuImage" /></p>
+
+<p>Ubuntu MATE:
+Ubuntu MATE is my preferred distribution for a general desktop and development environment. I mainly deploy my personal projects to Ubuntu servers. Ubuntu has done a great job of making Linux a friendly and easy to learn thing through a tasteful design and release methodology and especially due to the amazingly supportive community. The amount of guides and resources that are available for Ubuntu is fantastic too. The MATE desktop environment delivers that classic Gnome feel that I got accommodated to when I was originally cutting my teeth on Linux.</p>
 
   </div>
 
@@ -120,7 +158,7 @@ ga('send', 'pageview');
 		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 		        var disqus_shortname = 'fredrickp'; // required: replace example with your forum shortname
 		        //var disqus_developer = 1; // Comment out when the site is live
-		        var disqus_identifier = "/check-in/2016/09/19/checking-in.html";
+		        var disqus_identifier = "/check-in/reflections/2016/11/13/windows-and-linux-development.html";
 
 		        /* * * DON'T EDIT BELOW THIS LINE * * */
 		        (function() {
