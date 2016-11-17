@@ -9,7 +9,7 @@ date: "2016-11-17 00:20:07 -0500"
 
 I am sure many will agree that I have only started to dip my toes in the water of cloud containers but I find that my experiences between Docker Cloud and Kubernetes/Google Cloud to be very different.
 
-##### Google Cloud Platform
+### Google Cloud Platform
 
 * The good
 
@@ -24,7 +24,7 @@ I am sure many will agree that I have only started to dip my toes in the water o
     * I found the toolkit to be multi layered and complex. This added onto the already complex nature of container technology was a bit too much added informational overhead. It took almost 2 whole hours and a few different reference documents to get something similar to a docker container running on one of the nodes. The process involved creating a cluster, then going onto a Linux machine to build and push the docker image to Google cloud. Once the image was there I had to then install the Kubernetes toolkit locally on my machine so that I could see a ui in which I deployed the docker image. This was entirely confusing as I didn't understand why Google could not have just hosted that on their own systems rather than making me do additional unnecessary configuration.
 
 
-##### Docker Cloud
+### Docker Cloud
 
 * The good
 
