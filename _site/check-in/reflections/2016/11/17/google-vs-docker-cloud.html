@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fallout 4 Enable Mods Script</title>
-  <meta name="description" content="  What is the application?          The application is a small script that when run properly on a fresh install of Fallout 4 enables the user to start downlo...">
+  <title>Google vs Docker Cloud</title>
+  <meta name="description" content="I am sure many will agree that I have only started to dip my toes in the water of cloud containers but I find that my experiences between Docker Cloud and Ku...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://derfoh.github.io/2016/03/03/fallout-4-enable-mods-script.html">
-  <link rel="alternate" type="application/rss+xml" title="Coding With The Flow" href="http://derfoh.github.io/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/check-in/reflections/2016/11/17/google-vs-docker-cloud.html">
+  <link rel="alternate" type="application/rss+xml" title="Coding With The Flow" href="http://0.0.0.0:4000/feed.xml">
   <!--
 <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -97,60 +97,80 @@ ga('send', 'pageview');
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Fallout 4 Enable Mods Script</h1>
-    <p class="post-meta"><time datetime="2016-03-03T00:54:20+00:00" itemprop="datePublished">Mar 3, 2016</time></p>
+    <h1 class="post-title" itemprop="name headline">Google vs Docker Cloud</h1>
+    <p class="post-meta"><time datetime="2016-11-17T00:20:07-05:00" itemprop="datePublished">Nov 17, 2016</time></p>
   </header>
 
 
   <!-- Begin comments -->
   <div class="post-content" itemprop="articleBody">
+    <p>I am sure many will agree that I have only started to dip my toes in the water of cloud containers but I find that my experiences between Docker Cloud and Kubernetes/Google Cloud to be very different.</p>
+
+<h3 id="google-cloud-platform">Google Cloud Platform</h3>
+
+<ul>
+  <li>
+    <p>The good</p>
+
     <ul>
-  <li>What is the application?
-    <ul>
-      <li>The application is a small script that when run properly on a fresh install of Fallout 4 enables the user to start downloading and installing modified content into their game. I made this script because I was tired of having to do this over and over for myself as well as friends and family. This script provides a simple set of instructions to the user directing them to place it in the appropriate folder and then run it. It then makes the appropriate changes to the ini files of the game to allow modified content to be loaded properly.</li>
+      <li>
+        <p>There are free containers that you can use. Google offers up to 3 containers in their repository that they will host for free. This actually comes at a cost for Docker Cloud along with the added cost of the hosting for that container.</p>
+      </li>
+      <li>
+        <p>You get the satisfaction and utility of a tried and true containerized service delivery platform that will not have any decline in support in the foreseeable future.</p>
+      </li>
     </ul>
   </li>
-  <li>What platform is it for?
+  <li>
+    <p>The bad</p>
+
     <ul>
-      <li>This script is only compatible with Windows operating systems.</li>
-    </ul>
-  </li>
-  <li>What did you learn from making this?
-    <ul>
-      <li>While I understood these things it provided an oportunity for me to reivew how to copy, make, and edit files using a batch script.</li>
-    </ul>
-  </li>
-  <li>Where do I get it?
-    <ul>
-      <li>The script can be obtained from one of two sources:
-        <ul>
-          <li><a href="https://github.com/DerfOh/EnableFalloutModsScript">GitHub</a></li>
-          <li><a href="http://www.nexusmods.com/fallout4/mods/10496/">Nexus</a></li>
-        </ul>
+      <li>
+        <p>You are pretty much locked into using Linux/Mac. If you’re a windows person the Kubernetes tools aren’t the easiest to set up and get going. You can easily get around this however if you are comfortable with running a virtual machine and if you’re working with containers you’re already more likely to be developing off of one of these systems anyway.</p>
+      </li>
+      <li>
+        <p>I found the toolkit to be multi layered and complex. This added onto the already complex nature of container technology was a bit too much added informational overhead. It took almost 2 whole hours and a few different reference documents to get something similar to a docker container running on one of the nodes. The process involved creating a cluster, then going onto a Linux machine to build and push the docker image to Google cloud. Once the image was there I had to then install the Kubernetes toolkit locally on my machine so that I could see a ui in which I deployed the docker image. This was entirely confusing as I didn’t understand why Google could not have just hosted that on their own systems rather than making me do additional unnecessary configuration.</p>
       </li>
     </ul>
   </li>
 </ul>
 
+<h3 id="docker-cloud">Docker Cloud</h3>
+
+<ul>
+  <li>
+    <p>The good</p>
+
+    <ul>
+      <li>
+        <p>The integration with the Docker hub repository is seamless. I can push an image that I built locally up to the repository, then as soon as changes are detected the image is then redeployed on the server.</p>
+      </li>
+      <li>
+        <p>Host integration was very easy for me. I use digital ocean for most of my personal needs and creating a dedicated docker droplet was very easy to do. Their documentation was very strait forward and made it very easy for me to integrate the two providers in a very conventional way. Along with this integration Docker Cloud automatically provisions and manages scaling up your infrastructure in a very simple and strait forward interface.</p>
+      </li>
+      <li>
+        <p>Triggers, environment variables, and everything else you can imagine is easily configured from their dashboard. I found that Kubernetes didn’t even come close to scratching the surface of configurable that the Docker Cloud ui had brought to the table.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>The bad</p>
+
+    <ul>
+      <li>
+        <p>The added overhead cost is one thing that always gets to me with Docker Cloud. Not only do I have to pay for the service, the private repositories for Dockerhub, but I also have to pay for the server along with it all. This whole stack can add up to quite a big chunk of cash if you get carried away with the amount of projects and sites you’re hosting with this setup.</p>
+      </li>
+      <li>
+        <p>Docker is a relatively new product in comparison to the engineering that goes on at Google. It is still in it’s infancy too. It is still very rare to see large sites running their infrastructure from Docker Cloud so there are really no well defined best practices for doing it. Finally with being new means there are bound to be large changes yet in the development pipeline. These changes while good may also bring along with them volatile reliability for the service.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>In retrospect I am most comfortable using Docker Cloud for my provisioning and management of my containers. The most valuable aspect for me is how easily the interface blends all of the essential functions of docker in a way that just really makes sense even for someone who is relatively new to the whole concept of containerized services and systems. While I do recognize that things may change in their core technology I am willing to take on the additional overhead for the possibility of them creating something that can stand up to the well established industry giants like AWS and Google Cloud Platform.</p>
+
   </div>
 
-	
-		<div id="disqus_thread"></div>
-		    <script type="text/javascript">
-		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		        var disqus_shortname = 'fredrickp'; // required: replace example with your forum shortname
-		        //var disqus_developer = 1; // Comment out when the site is live
-		        var disqus_identifier = "/2016/03/03/fallout-4-enable-mods-script.html";
-
-		        /* * * DON'T EDIT BELOW THIS LINE * * */
-		        (function() {
-		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		        })();
-		    </script>
-		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	
 
 

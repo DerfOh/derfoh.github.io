@@ -4,11 +4,148 @@
     <title>Coding With The Flow</title>
     <description>The personal encounters I have in my experiences as a programmer, and tinkerer.
 </description>
-    <link>http://derfoh.github.io/</link>
-    <atom:link href="http://derfoh.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Nov 2016 16:51:13 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Nov 2016 16:51:13 +0000</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 02 Jan 2017 12:41:41 -0500</pubDate>
+    <lastBuildDate>Mon, 02 Jan 2017 12:41:41 -0500</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>My 2016 Gists</title>
+        <description>&lt;p&gt;Over the year I have collected a lot of gists of things that I constantly am looking up. If you’re not familiar with what a gist is start &lt;a href=&quot;https://gist.github.com/&quot;&gt;here&lt;/a&gt;. Basically it’s like pastebin but for code and other snippets that might be useful for saving for later or sharing with other coders.&lt;/p&gt;
+
+&lt;p&gt;At any rate though here are a few of the ones that I cobbled together to save myself some googleing.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-add-your-ssh-keys-in-one-line&quot;&gt;&lt;a href=&quot;https://gist.github.com/DerfOh/b65efff31b12c5049077de66fcd86493&quot;&gt;How to add your ssh keys in one line&lt;/a&gt;&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cat ~/.ssh/id_rsa.pub | ssh user@hostname &lt;span class=&quot;s2&quot;&gt;&quot;mkdir -p ~/.ssh &amp;amp;&amp;amp; cat &amp;gt;&amp;gt;  ~/.ssh/authorized_keys&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;cygwin-ctrlarrow-key-fix&quot;&gt;&lt;a href=&quot;https://gist.github.com/DerfOh/fbf389fc33ee37d7b8675e55b6bcbe96&quot;&gt;Cygwin ctrl+arrow key fix&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Add the following lines to ~/.inputrc (C:\cygwin\home&amp;lt;username&amp;gt;.inputrc):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[1;5C&quot;&lt;/span&gt;: forward-word   &lt;span class=&quot;c&quot;&gt;# ctrl + right&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\e&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[1;5D&quot;&lt;/span&gt;: backward-word  &lt;span class=&quot;c&quot;&gt;# ctrl + left &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;set-execution-mode-of-a-script-using-git&quot;&gt;&lt;a href=&quot;https://gist.github.com/DerfOh/013482021cc1079e6bb3b2907141bb2e&quot;&gt;Set execution mode of a script using git&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Change execution mode of a shell script so that it doesn’t get changed after git pull&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-git&quot; data-lang=&quot;git&quot;&gt;git update-index --chmod=+x foo.sh
+
+git ls-files --stage&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;convert-all-files-in-a-directory-to-unix-format&quot;&gt;&lt;a href=&quot;https://gist.github.com/DerfOh/0bf79edfa7569e66e9354c1cc1f5d336&quot;&gt;Convert all files in a directory to Unix format&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set up dos2unix&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the following in the directory&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -type f -exec dos2unix &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;parse-json-in-one-line-shell-script&quot;&gt;&lt;a href=&quot;https://gist.github.com/DerfOh/3eaba48efcd54834ba0eb667ab23a3cb&quot;&gt;Parse json in one line shell script&lt;/a&gt;&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$foo&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | awk -F&lt;span class=&quot;s2&quot;&gt;&quot;[,:]&quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{for(i=1;i&amp;lt;=NF;i++){if($i~/bar\042/){print $(i+1)} } }'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Mon, 02 Jan 2017 12:07:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/check-in/reflections/2017/01/02/My-2016-gists.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/reflections/2017/01/02/My-2016-gists.html</guid>
+        
+        <category>tips</category>
+        
+        
+        <category>check-in</category>
+        
+        <category>reflections</category>
+        
+      </item>
+    
+      <item>
+        <title>Google vs Docker Cloud</title>
+        <description>&lt;p&gt;I am sure many will agree that I have only started to dip my toes in the water of cloud containers but I find that my experiences between Docker Cloud and Kubernetes/Google Cloud to be very different.&lt;/p&gt;
+
+&lt;h3 id=&quot;google-cloud-platform&quot;&gt;Google Cloud Platform&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The good&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;There are free containers that you can use. Google offers up to 3 containers in their repository that they will host for free. This actually comes at a cost for Docker Cloud along with the added cost of the hosting for that container.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;You get the satisfaction and utility of a tried and true containerized service delivery platform that will not have any decline in support in the foreseeable future.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The bad&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;You are pretty much locked into using Linux/Mac. If you’re a windows person the Kubernetes tools aren’t the easiest to set up and get going. You can easily get around this however if you are comfortable with running a virtual machine and if you’re working with containers you’re already more likely to be developing off of one of these systems anyway.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;I found the toolkit to be multi layered and complex. This added onto the already complex nature of container technology was a bit too much added informational overhead. It took almost 2 whole hours and a few different reference documents to get something similar to a docker container running on one of the nodes. The process involved creating a cluster, then going onto a Linux machine to build and push the docker image to Google cloud. Once the image was there I had to then install the Kubernetes toolkit locally on my machine so that I could see a ui in which I deployed the docker image. This was entirely confusing as I didn’t understand why Google could not have just hosted that on their own systems rather than making me do additional unnecessary configuration.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;docker-cloud&quot;&gt;Docker Cloud&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The good&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;The integration with the Docker hub repository is seamless. I can push an image that I built locally up to the repository, then as soon as changes are detected the image is then redeployed on the server.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Host integration was very easy for me. I use digital ocean for most of my personal needs and creating a dedicated docker droplet was very easy to do. Their documentation was very strait forward and made it very easy for me to integrate the two providers in a very conventional way. Along with this integration Docker Cloud automatically provisions and manages scaling up your infrastructure in a very simple and strait forward interface.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Triggers, environment variables, and everything else you can imagine is easily configured from their dashboard. I found that Kubernetes didn’t even come close to scratching the surface of configurable that the Docker Cloud ui had brought to the table.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The bad&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;The added overhead cost is one thing that always gets to me with Docker Cloud. Not only do I have to pay for the service, the private repositories for Dockerhub, but I also have to pay for the server along with it all. This whole stack can add up to quite a big chunk of cash if you get carried away with the amount of projects and sites you’re hosting with this setup.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Docker is a relatively new product in comparison to the engineering that goes on at Google. It is still in it’s infancy too. It is still very rare to see large sites running their infrastructure from Docker Cloud so there are really no well defined best practices for doing it. Finally with being new means there are bound to be large changes yet in the development pipeline. These changes while good may also bring along with them volatile reliability for the service.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In retrospect I am most comfortable using Docker Cloud for my provisioning and management of my containers. The most valuable aspect for me is how easily the interface blends all of the essential functions of docker in a way that just really makes sense even for someone who is relatively new to the whole concept of containerized services and systems. While I do recognize that things may change in their core technology I am willing to take on the additional overhead for the possibility of them creating something that can stand up to the well established industry giants like AWS and Google Cloud Platform.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Nov 2016 00:20:07 -0500</pubDate>
+        <link>http://0.0.0.0:4000/check-in/reflections/2016/11/17/google-vs-docker-cloud.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/reflections/2016/11/17/google-vs-docker-cloud.html</guid>
+        
+        <category>tips</category>
+        
+        <category>reviews</category>
+        
+        
+        <category>check-in</category>
+        
+        <category>reflections</category>
+        
+      </item>
     
       <item>
         <title>My Windows + Linux Toolkit</title>
@@ -58,9 +195,9 @@ I have had a long love-hate relationship with dual booting between Windows and L
 &lt;p&gt;Ubuntu MATE:
 Ubuntu MATE is my preferred distribution for a general desktop and development environment. I mainly deploy my personal projects to Ubuntu servers. Ubuntu has done a great job of making Linux a friendly and easy to learn thing through a tasteful design and release methodology and especially due to the amazingly supportive community. The amount of guides and resources that are available for Ubuntu is fantastic too. The MATE desktop environment delivers that classic Gnome feel that I got accommodated to when I was originally cutting my teeth on Linux.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 13 Nov 2016 14:11:51 +0000</pubDate>
-        <link>http://derfoh.github.io/check-in/reflections/2016/11/13/windows-and-linux-development.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/reflections/2016/11/13/windows-and-linux-development.html</guid>
+        <pubDate>Sun, 13 Nov 2016 09:11:51 -0500</pubDate>
+        <link>http://0.0.0.0:4000/check-in/reflections/2016/11/13/windows-and-linux-development.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/reflections/2016/11/13/windows-and-linux-development.html</guid>
         
         <category>podcasts</category>
         
@@ -77,7 +214,7 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
     
       <item>
         <title>Project - Vidjatrest</title>
-        <description>&lt;h1 id=&quot;check-out-vidjatrest-herehttpvidjatrestcodingwiththeflowcom&quot;&gt;&lt;a href=&quot;http://vidjatrest.codingwiththeflow.com&quot;&gt;Check out Vidjatrest here&lt;/a&gt;&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;check-out-vidjatrest-here&quot;&gt;&lt;a href=&quot;http://vidjatrest.codingwiththeflow.com&quot;&gt;Check out Vidjatrest here&lt;/a&gt;&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;What is the application?
@@ -105,9 +242,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 19 Jun 2016 22:30:57 +0100</pubDate>
-        <link>http://derfoh.github.io/projects/2016/06/19/vidjatrest.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/projects/2016/06/19/vidjatrest.html</guid>
+        <pubDate>Sun, 19 Jun 2016 17:30:57 -0400</pubDate>
+        <link>http://0.0.0.0:4000/projects/2016/06/19/vidjatrest.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/projects/2016/06/19/vidjatrest.html</guid>
         
         <category>projects</category>
         
@@ -152,9 +289,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Mon, 16 May 2016 17:17:04 +0100</pubDate>
-        <link>http://derfoh.github.io/check-in/2016/05/16/great-podcasts-information-security.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/05/16/great-podcasts-information-security.html</guid>
+        <pubDate>Mon, 16 May 2016 12:17:04 -0400</pubDate>
+        <link>http://0.0.0.0:4000/check-in/2016/05/16/great-podcasts-information-security.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/2016/05/16/great-podcasts-information-security.html</guid>
         
         <category>podcasts</category>
         
@@ -203,9 +340,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 23 Apr 2016 17:48:20 +0100</pubDate>
-        <link>http://derfoh.github.io/check-in/2016/04/23/great-podcasts-programming.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/04/23/great-podcasts-programming.html</guid>
+        <pubDate>Sat, 23 Apr 2016 12:48:20 -0400</pubDate>
+        <link>http://0.0.0.0:4000/check-in/2016/04/23/great-podcasts-programming.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/2016/04/23/great-podcasts-programming.html</guid>
         
         <category>podcasts</category>
         
@@ -248,9 +385,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
 
 &lt;p&gt;If you have any further questions regarding my setup feel free to leave me a comment below!&lt;/p&gt;
 </description>
-        <pubDate>Sat, 02 Apr 2016 23:41:12 +0100</pubDate>
-        <link>http://derfoh.github.io/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html</guid>
+        <pubDate>Sat, 02 Apr 2016 18:41:12 -0400</pubDate>
+        <link>http://0.0.0.0:4000/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/raspberry%20pi/projects/2016/04/02/raspberry-pi-projects.html</guid>
         
         <category>projects</category>
         
@@ -271,9 +408,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
 
 &lt;p&gt;The intent behind licensing with the GPL was so that everyone who worked on the project could get equal credit for their contributions if any of us decide to use it for a portfolio or application that might result in a change in the intellectual property. My group members and I put a lot of work into getting everything together for the site to demonstrate our mastery of the knowledge gained from out database design course.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 18 Mar 2016 01:05:51 +0100</pubDate>
-        <link>http://derfoh.github.io/check-in/2016/03/18/school-projects-now-on-github.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/03/18/school-projects-now-on-github.html</guid>
+        <pubDate>Thu, 17 Mar 2016 20:05:51 -0400</pubDate>
+        <link>http://0.0.0.0:4000/check-in/2016/03/17/school-projects-now-on-github.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/2016/03/17/school-projects-now-on-github.html</guid>
         
         <category>projects</category>
         
@@ -312,9 +449,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 03 Mar 2016 00:54:20 +0000</pubDate>
-        <link>http://derfoh.github.io/2016/03/03/fallout-4-enable-mods-script.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/2016/03/03/fallout-4-enable-mods-script.html</guid>
+        <pubDate>Wed, 02 Mar 2016 19:54:20 -0500</pubDate>
+        <link>http://0.0.0.0:4000/2016/03/02/fallout-4-enable-mods-script.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2016/03/02/fallout-4-enable-mods-script.html</guid>
         
         <category>projects</category>
         
@@ -335,9 +472,9 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
 
 &lt;p&gt;I’m not sure though if for just us two this is more of a “nuclear option” and that it might be a bit overkill for just a small team. I wonder what aproaches other people generally take for this. For now though this works for us and hopefully if there are eventually more coding projects added under the org it will allow us to scale better as we get more members. I plan to eventually move a few of the bots that we use in our various group chats the group uses under the organization too in hopes that other members decide to work on them.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 17 Feb 2016 22:27:32 +0000</pubDate>
-        <link>http://derfoh.github.io/check-in/2016/02/17/changes-to-841g-site.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/check-in/2016/02/17/changes-to-841g-site.html</guid>
+        <pubDate>Wed, 17 Feb 2016 17:27:32 -0500</pubDate>
+        <link>http://0.0.0.0:4000/check-in/2016/02/17/changes-to-841g-site.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/check-in/2016/02/17/changes-to-841g-site.html</guid>
         
         <category>webdesign</category>
         
@@ -345,72 +482,6 @@ Ubuntu MATE is my preferred distribution for a general desktop and development e
         
         
         <category>check-in</category>
-        
-      </item>
-    
-      <item>
-        <title>Changing Default Git Shell</title>
-        <description>&lt;p&gt;Had some trouble finding an answer to this, maybe I was wording it wrong. Here it is in case there is another curious party.&lt;/p&gt;
-
-&lt;p&gt;To change the shell that you use do the following:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Click on the cog in the upper right of the GitHub gui&lt;/li&gt;
-  &lt;li&gt;Select &lt;code&gt;Options&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Directly under &lt;code&gt;Clone Path&lt;/code&gt; there is an option: &lt;code&gt;Default Shell&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Select the shell you want to use when you go to start&amp;gt;git shell&lt;/li&gt;
-  &lt;li&gt;Click Save&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now when you select Git Shell from your start menu it will open Git Bash.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 31 Dec 2015 15:02:27 +0000</pubDate>
-        <link>http://derfoh.github.io/tips/2015/12/31/changing-default-git-shell.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/tips/2015/12/31/changing-default-git-shell.html</guid>
-        
-        <category>tips</category>
-        
-        <category>git</category>
-        
-        <category>bash</category>
-        
-        
-        <category>tips</category>
-        
-      </item>
-    
-      <item>
-        <title>Undead Data</title>
-        <description>&lt;p&gt;For my SQL class this semester we were asked to do a series of things that walked us through the creation of a great relational database. For my project our group decided on making a database for a fictional post-apocalyptic world where zombies are roaming the earth. Think watered down version of an application that could be used to keep track of the characters on popular television shows or movies. Another possible use for the design as discussed by my group is in making some sort of table top turn based game.&lt;/p&gt;
-
-&lt;p&gt;Wile the sole purpose of the project was just to create the database, not a front end, I decided to take things one step further for our deliverable for the end of the semester. I made it into a full LAMP stack website that demonstrated that the database and their queries can work with current web design standards.&lt;/p&gt;
-
-&lt;p&gt;Also this project allotted me a good excuse to learn a bit of PHP as I had minimal experience with it as a language prior to this experience. Ultimately while the code is clearly amateur it was a great way to learn a good variety of things such as but not limited to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Basic PHP formatting and syntax&lt;/li&gt;
-  &lt;li&gt;Using PHP to connect to a SQL database&lt;/li&gt;
-  &lt;li&gt;Using PHP to query and draw the output into HTML tables.&lt;/li&gt;
-  &lt;li&gt;POST and GET operations&lt;/li&gt;
-  &lt;li&gt;Full LAMP Stack design philosophy&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyway here is a link to the project. I will probably keep it up indefinitely or until I decide I want to use that particular VPS for something different.&lt;/p&gt;
-
-&lt;h3 id=&quot;undead-datahttpundeaddataderfohme&quot;&gt;&lt;strong&gt;&lt;a href=&quot;http://undeaddata.derfoh.me&quot;&gt;Undead Data&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
-</description>
-        <pubDate>Fri, 18 Dec 2015 00:00:00 +0000</pubDate>
-        <link>http://derfoh.github.io/undeaddata/2015/12/18/undead-data.html</link>
-        <guid isPermaLink="true">http://derfoh.github.io/undeaddata/2015/12/18/undead-data.html</guid>
-        
-        <category>projects</category>
-        
-        <category>Web Design</category>
-        
-        <category>LAMP</category>
-        
-        
-        <category>UndeadData</category>
         
       </item>
     

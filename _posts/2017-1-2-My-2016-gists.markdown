@@ -1,0 +1,51 @@
+---
+title: "My 2016 gists"
+layout: post
+categories: ["check-in", "reflections"]
+tags: ["tips"]
+title: "My 2016 Gists"
+date: "2017-01-02 12:07 -0500"
+---
+
+Over the year I have collected a lot of gists of things that I constantly am looking up. If you're not familiar with what a gist is start [here](https://gist.github.com/). Basically it's like pastebin but for code and other snippets that might be useful for saving for later or sharing with other coders.
+
+At any rate though here are a few of the ones that I cobbled together to save myself some googleing.
+
+# [How to add your ssh keys in one line](https://gist.github.com/DerfOh/b65efff31b12c5049077de66fcd86493)
+
+{% highlight bash %}
+cat ~/.ssh/id_rsa.pub | ssh user@hostname "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+{% endhighlight %}
+
+# [Cygwin ctrl+arrow key fix](https://gist.github.com/DerfOh/fbf389fc33ee37d7b8675e55b6bcbe96)
+
+Add the following lines to ~/.inputrc (C:\cygwin\home\<username>\.inputrc):
+{% highlight bash %}
+"\e[1;5C": forward-word   # ctrl + right
+"\e[1;5D": backward-word  # ctrl + left 
+{% endhighlight %}
+
+# [Set execution mode of a script using git](https://gist.github.com/DerfOh/013482021cc1079e6bb3b2907141bb2e)
+
+Change execution mode of a shell script so that it doesn't get changed after git pull
+{% highlight git %}
+git update-index --chmod=+x foo.sh
+
+git ls-files --stage
+{% endhighlight %}
+
+# [Convert all files in a directory to Unix format](https://gist.github.com/DerfOh/0bf79edfa7569e66e9354c1cc1f5d336)
+
+1. Set up dos2unix
+
+2. Run the following in the directory
+{% highlight bash %}
+find . -type f -exec dos2unix {} \;
+{% endhighlight %}
+
+
+# [Parse json in one line shell script](https://gist.github.com/DerfOh/3eaba48efcd54834ba0eb667ab23a3cb)
+
+{% highlight bash %}
+echo "$foo" | awk -F"[,:]" '{for(i=1;i<=NF;i++){if($i~/bar\042/){print $(i+1)} } }'
+{% endhighlight %}
