@@ -1,38 +1,42 @@
-FROM phusion/baseimage:0.9.18
+# DOCKER-VERSION 1.6.0, build 4749651
+ 
+# codingwiththeflow Dockerfile
+# Runs Jekyll under Nginx with Passenger
 
-  # Install the brightbox ruby repository
-  # https://www.brightbox.com/blog/2016/01/06/ruby-2-3-ubuntu-packages/
-  RUN apt-add-repository ppa:brightbox/ruby-ng
+FROM phusion/passenger-ruby21:0.9.15
+MAINTAINER Fredrick Paulin "fredrick.p@outlook.com"
 
-  # Install lower level dev libraries required to install
-  # gems with native extensions
-  RUN apt-get update && apt-get install -y zlibc \
-    libgcrypt11-dev \
-    zlib1g-dev \
-    build-essential \
-    git
+# Set environment variables
+ENV HOME /home/deployer
 
-  # Install ruby
-  RUN apt-get install -y -q ruby2.3 ruby2.3-dev
+# Use baseimage-docker's init process
+CMD ["/sbin/my_init"]
 
-  # Install bundler and rake
-  RUN gem install rake:11.1.2 \
-    bundler:1.11.2 \
-    --no-rdoc --no-ri
+# Expose Nginx HTTP service
+EXPOSE 80
 
-  # Install Jekyll and some common plugins
-  RUN gem install jekyll:3.1.3 \
-    rouge:1.10.1 \
-    jekyll-scholar:5.8.0 \
-    jekyll-seo-tag:1.4.0 \
-    jekyll-assets:2.1.3 \
-    jekyll-press:0.2.1 \
-    --no-rdoc --no-ri
+# Start Nginx / Passenger
+RUN rm -f /etc/service/nginx/down
 
-  COPY build.sh .
-  
-  EXPOSE 4000
-  
-  RUN chmod +x build.sh
+# Remove the default site
+RUN rm /etc/nginx/sites-enabled/default
 
-  CMD ["./build.sh"]
+# Add the Nginx site and config
+COPY nginx.conf /etc/nginx/sites-enabled/webapp.conf
+
+# Install bundle of gems
+WORKDIR /tmp
+COPY Gemfile /tmp/
+COPY Gemfile.lock /tmp/
+RUN bundle install
+
+# Add the Passenger app
+COPY . /home/app/webapp
+RUN chown -R app:app /home/app/webapp
+
+# Build the app with Jekyll
+WORKDIR /home/app/webapp
+RUN jekyll build
+
+# Clean up APT when done
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
