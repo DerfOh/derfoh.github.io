@@ -4,7 +4,7 @@ categories: ["tips", "tutorias"]
 tags: ["tips", "tutorias"]
 title: "Automated golang Deployments"
 date: "2017-01-15 21:00 -0500"
-published: "false"
+published: False
 ---
 
 # Intro
