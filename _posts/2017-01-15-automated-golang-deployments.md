@@ -26,6 +26,7 @@ In this section I will set up a simple golang web application using the http lib
 First I create the following file in my golang projects directory.
 
 main.go
+
 ```golang
 package main
 
@@ -43,6 +44,7 @@ func main() {
     http.ListenAndServe(":80", nil)
 }
 ```
+
 If you have your gopath set up then at this point you're all set to build the application if you wish to try things out.
 
 Otherwise if you haven't set up the path yet or if you're not sure how then the next section will actually outline the process of containerizing the application in a docker container. So technically you don't even need to install the golang toolkit on your computer as the docker container will contain all of the dependencies and requirements for building and running the golang app. This is really where Docker shines as you can do all of your development locally testing your changes against a docker container. Once you're done adding the feature all you'll need to do is push up the container to Dockerhub and it is ready to go!
@@ -53,7 +55,8 @@ Otherwise if you haven't set up the path yet or if you're not sure how then the 
 The first step is to write a Dockerfile using the oficially maintained golang  container.
 
 Dockerfile
-```
+
+```dockerfile
 FROM golang:latest
 # Put your info on the following line
 MAINTAINER Fredrick Paulin <fredrick.p@outlook.com>
@@ -89,6 +92,7 @@ Now we just need to build and test our app and contianer replacing the repositor
 docker build -t . derfoh/golang-deploys-tutorial
 docker run -it -p 80:80 derfoh/golang-deploys-tutorial
 ```
+
 Note that we have specified the port with the `-p 80:80` tag this tells docker that you want the internal port 80 on the container to listen on port 80 of the host. You can change this to your liking but since our application is already written to listen on port 80 for this example we will continue to use the standard http port. 
 
 Once you have navigated to [http://localhost/](http://localhost/) you will be greeted by the message "I love Go!". This confirms that the application was properly built and ran. Eventually we will automate this test using a simple `curl` defined within the CircleCi settup.
@@ -96,6 +100,7 @@ Once you have navigated to [http://localhost/](http://localhost/) you will be gr
 To exit the container use ctrl+c.
 
 Next we need to push the initial container to Dockerhub replacing my info with yours where appropriate
+
 ```bash
 docker push derfoh/golang-deploys-tutorial
 ```
