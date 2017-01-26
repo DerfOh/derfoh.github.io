@@ -51,7 +51,9 @@ Otherwise if you haven't set up the path yet or if you're not sure how then the 
 
 
 # Docker
+
 ## Writing a Dockerfile
+
 The first step is to write a Dockerfile using the oficially maintained golang  container.
 
 Dockerfile
@@ -124,6 +126,7 @@ Scroll down to the ports section and enter port 80 for the node port. Tick the "
 This section will detail the process of automatically deploying when a new docker image is pushed to docker hub. The container living in docker cloud will automattically redeploy it's self as soon as a new docker build is available. This step while not required can be skipped if you prefer a manual deployment but for the sake of this guide we'll be automating the whole process from the git push to the deployed application.
 
 # CircleCi
+
 ## Writing a circle.yml
 
 ```yml
