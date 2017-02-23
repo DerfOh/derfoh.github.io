@@ -39,12 +39,15 @@ permalink: /about/
 |---
 | Language Courses    |        | Other Courses
 |---------------------|:------:|--------------------------------:|
-| Visual Studio .Net  |  C++   | Human Computer Interaction 
+| Visual Basic .Net   |  C++   | Human Computer Interaction 
 | Java                | Python | IT Hardware and Software 
 | COBOL               | UML    | Telecom and Computer networks
 | SQL Database Design | HTML   | Unix Systems
 | Javascript          |  CSS   | Information Security
 |                     |        | Object oriented design
+|                     |        | Enterprise Archetecture
+|                     |        | Software Engineering 
+|                     |        | Project Management
 |===
 
 <br />
@@ -54,9 +57,17 @@ permalink: /about/
 
 # Work Experience
 
+#### Flagstar Bank ####
+##### Associate Systems Administrator 2016 - Present #####
+* Maintain Unix based systems and applications. Mainly worked with servers hosting tools like Apache or Jboss.
+* Managing SSL certificate requests and signing. 
+* Developed a continuous deployment pipeline for the web team script libraries using BitBucket, Rundeck, and Bash/CURL scripts. Also helped develop a proof of concept for storing application credentials using HashiCorp Vault and Consul.
+* Developed an Angular2 proof of concept web app for front end framework.
+* Other tools and systems administered: ActiveMQ, Mule Enterprise Service Bus, Rundeck, H2 Databases, Load Balancers, and a variety of other tools that I am called upon to gain an understanding of. 
+
 #### Geek Squad ####
 
-##### Advanced Repair Agent - February 2015 - Present ####
+##### Advanced Repair Agent - February 2015 - September 2016 ####
 
 * Work mostly in a self directed environment to perform advanced diagnostics and repairs for complex technology issues as well as providing end user support. Repairs include but are not limited to: Installing, diagnosing, and repairing faulty hardware such as CPUs, hard disk and solid state drives, RAM, peripheral expansion cards (networking, graphics, sound, etc), and motherboards. Diagnosing and repairing software and operating system related issues including: Malware removal, software installation, networking, operating system restore, data forensics, backup, and recovery.
 
