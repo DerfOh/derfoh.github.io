@@ -12,18 +12,21 @@ permalink: /about/
 -----
 <br />
 
-# Software Developer
+# Systems Administrator by day Software Developer by night
 * Upcoming graduate majoring in Computer Information Systems from the University of Michigan
 * Strong foundation in software design and development on multiple platforms
 * Capable of quickly learning new technical systems
 * Able to work with small and self directed teams
 * Experience with object oriented programming, testing, and deploying code
-* Remote programming and deployment
-* Version control systems such as Git
+* Working with remote programming and deployment teams and tools
+* Very comfortable working with command line interfaces
+* Very experienced using Git and BitBucket for source code management
 * Capable of working with and configuring a wide complex tool set as well as able to learn new ones
+* Comfortable working with and experienced in developing RESTful APIs 
 * Experience with designing and maintaining systems
 * Experience with advanced networking techniques and proper system maintenance
 * Capable of providing end user support
+* Has implemented single sign on for LDAP based authentication and authorization
 
 -----
 <br />
@@ -63,6 +66,7 @@ permalink: /about/
 * Managing SSL certificate requests and signing. 
 * Developed a continuous deployment pipeline for the web team script libraries using BitBucket, Rundeck, and Bash/CURL scripts. Also helped develop a proof of concept for storing application credentials using HashiCorp Vault and Consul.
 * Developed an Angular2 proof of concept web app for front end framework.
+* Integrated and configured LDAP based authentication and authorization for multiple applications.
 * Other tools and systems administered: ActiveMQ, Mule Enterprise Service Bus, Rundeck, H2 Databases, Load Balancers, and a variety of other tools that I am called upon to gain an understanding of. 
 
 #### Geek Squad ####
@@ -84,9 +88,11 @@ permalink: /about/
 
 # Bio
 
-Much of my expertise derives from my love for all things electronic. I have a deep passion in my heart for learning new things involving computers and I actively seek out new and interesting things that technology enables me to do. I am currently working towards a Bachelor of Computer Information Systems degree at the University of Michigan. I have had an active education in the various forms of programming languages including [(but not limited to)](../codestats/) COBOL, C++, Python, Java, Android, HTML, JavaScript, and CSS. As well as the usage of a wide range of computer systems and applications. I also spend a huge amount of my free time working on a variety of open source projects on GitHub.
+Much of my expertise derives from my love for all things electronic. I have a deep passion in my heart for learning new things involving computers and I actively seek out new and interesting open source tools and projects to further my knowlege. I am currently working towards a Bachelor of Computer Information Systems degree at the University of Michigan. I have had an active education in the various forms of programming languages including [(but not limited to)](../codestats/) COBOL, C++, Python, Java, Android, HTML, JavaScript, and CSS. As well as the usage of a wide range of computer systems and applications. I also spend a huge amount of my free time trying out and contributing back to a variety of open source projects on GitHub.
 
-I currently am employed as an Advance Repair Agent for Geek Squad. In this roll I am primarily tasked with troubleshooting and repairing end-user devices that are checked in for more technical repairs and services that cannot be performed within 24 hours. On a daily basis I remove malicious applications, troubleshoot and repair faulty software and malfunctioning hardware, and perform data backup and recovery services. I am also asked to support users in software installation and setup as well as educate end users of proper care and use for their gadgets. Secondary duties include shipping and receiving parts and client devices, book keeping for internal business, legal, and technical paperwork. This roll has given me the opportunity to master working on a small team to maintain internal operations of an IT help desk and provide exceptional customer service in a highly technical and complex, time sensitive, environment.
+I am currently working as an Associate Systems Administrator with Flagstar Bank. This roll has taught me a great deal about working within small agile dev ops teams to maintain Unix hosted web application servers and tools. My experiences and tasks are varried. I have worked with teams to create deploy pipelines for shared bash script libraries and web application configuration files using BitBucket, Rundeck, and Bash/CURL scripts to querie APIs on both. I have integrated and configured LDAP login for a variety of web applications and tools. I support in generating SSL certificates and supporting the user in the installation of these certificates ensuring that they are available in the correct format. Developed proof of concept applications in Angular2. Helped to set up and support Mule Enterprise Service Bus, Rundeck job execution tool, and a variety of other AdHoc IT initiatives where I am needed. 
+
+I have worked as an Advance Repair Agent for Geek Squad. In this roll I was primarily tasked with troubleshooting and repairing end-user devices that are checked in for more technical repairs and services that cannot be performed within 24 hours. On a daily basis I removed malicious applications, troubleshooted and repaired faulty software and malfunctioning hardware, and performed data backup and recovery services. I was also asked to support users in software installation and setup as well as educating end users of proper care and use for their gadgets. Secondary duties include shipping and receiving parts and client devices, book keeping for internal business processes and metrics, as well as legal and technical paperwork. This roll has given me the opportunity to master working on a small team to maintain internal operations of an IT help desk and provide exceptional customer service in a highly technical and complex, time sensitive, environment.
 
 I have also worked as a teacher's aide for a class that taught VB.net and Visual Studio at the University of Michigan CSEP Department. I assisted the course instructor with grading homework projects and helping students grasp difficult concepts in class involving their code. Not only did this give me experience with working with other people's code it also gave me an opportunity to mentor and teach my peers in a cooperative and cohesive manor. Working as an aid taught me a great deal about debugging as well, there were times where stepping through a method with a student was the best way of helping a student figure out how they can get their code working.
 
