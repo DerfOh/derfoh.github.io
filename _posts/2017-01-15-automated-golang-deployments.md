@@ -11,7 +11,7 @@ comments: True
 # Intro
 In this post I am going to create an outline for the process that I have successfully used to automatically test and deploy golang web applications to a production ready cloud environment using Docker, CircleCi, GitHub, and Digital Ocean. 
 
-Using Docker as a contianerization service as well as an orchestration layer has allowed me to support clustering and scaling of my web applications in a seamless manor.
+Using Docker as a containerization service as well as an orchestration layer has allowed me to support clustering and scaling of my web applications in a seamless manor.
 
 When coupled with a continuous integration service like CircleCi I have been able to perform deploys using just a single code commit that include end to end testing for the applications for each deploy. 
 
@@ -88,7 +88,7 @@ EXPOSE 80:80
 CMD ["/app/main"]
 ```
 
-Now we just need to build and test our app and contianer replacing the repository owner and name where appropriate:
+Now we just need to build and test our app and container replacing the repository owner and name where appropriate:
 
 ```bash
 docker build -t . derfoh/golang-deploys-tutorial
