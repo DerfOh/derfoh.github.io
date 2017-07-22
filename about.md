@@ -7,96 +7,15 @@ permalink: /about/
 
 ![Under Water](../images/underwater.png){:height="50%" width="50%"}  
 
-# Fredrick Paulin
-
------
-<br />
-
-# Systems Administrator by day Software Developer by night
-* Upcoming graduate majoring in Computer Information Systems from the University of Michigan
-* Strong foundation in software design and development on multiple platforms
-* Capable of quickly learning new technical systems
-* Able to work with small and self directed teams
-* Experience with object oriented programming, testing, and deploying code
-* Working with remote programming and deployment teams and tools
-* Very comfortable working with command line interfaces
-* Very experienced using Git and BitBucket for source code management
-* Capable of working with and configuring a wide complex tool set as well as able to learn new ones
-* Comfortable working with and experienced in developing RESTful APIs 
-* Experience with designing and maintaining systems
-* Experience with advanced networking techniques and proper system maintenance
-* Capable of providing end user support
-* Has implemented single sign on for LDAP based authentication and authorization
-
------
-<br />
-
-# Education
-
-#### University of Michigan ####
-
-##### Pursuing Bachelor of Science, Majoring in Computer Information Systems - Expected to graduate in Spring of 2017 #####
-
-#### Courses completed ####
-
-|---
-| Language Courses    |        | Other Courses
-|---------------------|:------:|--------------------------------:|
-| Visual Basic .Net   |  C++   | Human Computer Interaction 
-| Java                | Python | IT Hardware and Software 
-| COBOL               | UML    | Telecom and Computer networks
-| SQL Database Design | HTML   | Unix Systems
-| Javascript          |  CSS   | Information Security
-|                     |        | Object oriented design
-|                     |        | Enterprise Archetecture
-|                     |        | Software Engineering 
-|                     |        | Project Management
-|===
-
-<br />
-
----
-<br />
-
-# Work Experience
-
-#### Flagstar Bank ####
-##### Associate Systems Administrator 2016 - Present #####
-* Maintain Unix based systems and applications. Mainly worked with servers hosting tools like Apache or Jboss.
-* Managing SSL certificate requests and signing. 
-* Developed a continuous deployment pipeline for the web team script libraries using BitBucket, Rundeck, and Bash/CURL scripts. Also helped develop a proof of concept for storing application credentials using HashiCorp Vault and Consul.
-* Developed an Angular2 proof of concept web app for front end framework.
-* Integrated and configured LDAP based authentication and authorization for multiple applications.
-* Other tools and systems administered: ActiveMQ, Mule Enterprise Service Bus, Rundeck, H2 Databases, Load Balancers, and a variety of other tools that I am called upon to gain an understanding of. 
-
-#### Geek Squad ####
-
-##### Advanced Repair Agent - February 2015 - September 2016 ####
-
-* Work mostly in a self directed environment to perform advanced diagnostics and repairs for complex technology issues as well as providing end user support. Repairs include but are not limited to: Installing, diagnosing, and repairing faulty hardware such as CPUs, hard disk and solid state drives, RAM, peripheral expansion cards (networking, graphics, sound, etc), and motherboards. Diagnosing and repairing software and operating system related issues including: Malware removal, software installation, networking, operating system restore, data forensics, backup, and recovery.
-
-
-#### Best Buy ####
-
-##### Home Office Sales Consultant - June 2014 - February 2015####
-
-* Worked with a sales team to provide client education and craft solutions to fit the needs of complex home office setups. Considered to be an expert on a wide variety of software, hardware, and networking equipment such as: desktop computers, laptop computers, Macintosh computers, android/iOS mobile tablets, printers, modems, routers, switches, display technology, and a selection of other peripheral devices. 
-
-
----
-<br />
-
 # Bio
 
-Much of my expertise derives from my love for all things electronic. I have a deep passion in my heart for learning new things involving computers and I actively seek out new and interesting open source tools and projects to further my knowledge. I am currently working towards a Bachelor of Computer Information Systems degree at the University of Michigan. I have had an active education in the various forms of programming languages including (but not limited to) COBOL, C++, Python, Java, Android, HTML, JavaScript, and CSS. As well as the usage of a wide range of computer systems and applications. I also spend a huge amount of my free time trying out and contributing back to a variety of open source projects on GitHub.
+Much of my expertise derives from my love for all things electronic. I have a deep passion in my heart for learning new things involving computers and I actively seek out new and interesting open source tools and projects to further my knowledge. I have achieved a Bachelor of Science in Computer Information Systems degree at the University of Michigan. 
+
+I have had an active education in the various forms of programming languages including (but not limited to) COBOL, C++, Python, Java, Android, HTML, JavaScript, and CSS. As well as the usage of a wide range of computer systems and applications. I also spend a huge amount of my free time trying out and contributing back to a variety of open source projects on GitHub.
 
 I am currently working as an Associate Systems Administrator with Flagstar Bank. This roll has taught me a great deal about working within small agile dev ops teams to maintain Unix hosted web application servers and tools. My experiences and tasks are varied. I have worked with teams to create deploy pipelines for shared bash script libraries and web application configuration files using BitBucket, Rundeck, and Bash/CURL scripts to query APIs on both. I have integrated and configured LDAP login for a variety of web applications and tools. I support in generating SSL certificates and supporting the user in the installation of these certificates ensuring that they are available in the correct format. Developed proof of concept applications in Angular2. Helped to set up and support Mule Enterprise Service Bus, Rundeck job execution tool, and a variety of other AdHoc IT initiatives where I am needed.
 
 I have worked as an Advance Repair Agent for Geek Squad. In this roll I was primarily tasked with troubleshooting and repairing end-user devices that are checked in for more technical repairs and services that cannot be performed within 24 hours. On a daily basis I removed malicious applications, troubleshooted and repaired faulty software and malfunctioning hardware, and performed data backup and recovery services. I was also asked to support users in software installation and setup as well as educating end users of proper care and use for their gadgets. Secondary duties include shipping and receiving parts and client devices, book keeping for internal business processes and metrics, as well as legal and technical paperwork. This roll has given me the opportunity to master working on a small team to maintain internal operations of an IT help desk and provide exceptional customer service in a highly technical and complex, time sensitive, environment.
-
-I have also worked as a teacher’s aide for a class that taught VB.net and Visual Studio at the University of Michigan CSEP Department. I assisted the course instructor with grading homework projects and helping students grasp difficult concepts in class involving their code. Not only did this give me experience with working with other people’s code it also gave me an opportunity to mentor and teach my peers in a cooperative and cohesive manner. Working as an aid taught me a great deal about debugging as well, there were times where stepping through a method with a student was the best way of helping a student figure out how they can get their code working.
-
-I have sales experience working as a consultant for Best Buy. I have crafted custom office solutions for customers involving software and hardware combinations of software and computing equipment such as laptop and desktop computers, printers, networking equipment, display technology, as well as a multitude of other input/output devices. Along with these things I was tasked with performing demonstrations and helping the end users with using their newly possessed gadgetry.
 
 * [LinkedIn Profile: https://www.linkedin.com/pub/fredrick-paulin/90/258/978](https://www.linkedin.com/pub/fredrick-paulin/90/258/978)
 
