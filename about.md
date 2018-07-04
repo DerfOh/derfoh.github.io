@@ -21,6 +21,7 @@ I have worked as an Advance Repair Agent for Geek Squad. In this roll I was prim
 
 * [GitHub Profile: https://github.com/DerfOh](https://github.com/DerfOh)
 
+* [Keybase: https://keybase.io/derfoh](https://keybase.io/derfoh)
 
 
 -----
