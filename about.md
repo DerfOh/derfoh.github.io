@@ -17,11 +17,11 @@ I am currently working as an Associate Systems Administrator with Flagstar Bank.
 
 I have worked as an Advance Repair Agent for Geek Squad. In this roll I was primarily tasked with troubleshooting and repairing end-user devices that are checked in for more technical repairs and services that cannot be performed within 24 hours. On a daily basis I removed malicious applications, troubleshooted and repaired faulty software and malfunctioning hardware, and performed data backup and recovery services. I was also asked to support users in software installation and setup as well as educating end users of proper care and use for their gadgets. Secondary duties include shipping and receiving parts and client devices, book keeping for internal business processes and metrics, as well as legal and technical paperwork. This roll has given me the opportunity to master working on a small team to maintain internal operations of an IT help desk and provide exceptional customer service in a highly technical and complex, time sensitive, environment.
 
-* [LinkedIn Profile: https://www.linkedin.com/pub/fredrick-paulin/90/258/978](https://www.linkedin.com/pub/fredrick-paulin/90/258/978)
+* [LinkedIn](https://www.linkedin.com/pub/fredrick-paulin/90/258/978)
 
-* [GitHub Profile: https://github.com/DerfOh](https://github.com/DerfOh)
+* [GitHub](https://github.com/DerfOh)
 
-* [Keybase: https://keybase.io/derfoh](https://keybase.io/derfoh)
+* [Keybase](https://keybase.io/derfoh)
 
 
 -----
