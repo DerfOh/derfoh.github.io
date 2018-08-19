@@ -19,11 +19,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            response=$(curl -s -o /dev/null -w "%{http_code}\n" http://localhost:80/)
-            if [ "$response" != "200" ]
-            then
-                exit 1
-            fi
+            sh 'curl -sf "http://www.exampladjfoajidfioafe.org/" >/dev/null'
             sh 'echo "Tests passed"'
         }
     }
