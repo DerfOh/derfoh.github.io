@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-![Under Water](../images/underwater.png){:height="50%" width="50%"}  
+![avatar](../images/avatar-background.png){:height="50%" width="50%"}  
 
 # Bio
 
