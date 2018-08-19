@@ -19,7 +19,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'curl -sf "http://www.exampladjfoajidfioafe.org/" >/dev/null'
+            sh 'curl -sf "http://localhost/" >/dev/null'
             sh 'echo "Tests passed"'
         }
     }
