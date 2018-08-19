@@ -19,9 +19,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'docker run -d -p 80:1337 derfoh/codingwiththeflow'
-            sh 'curl -sf "http://localhost:1337/" >/dev/null'
-
+            sh 'curl -sf "localhost:80" >/dev/null'
             sh 'echo "Tests passed"'
         }
     }
