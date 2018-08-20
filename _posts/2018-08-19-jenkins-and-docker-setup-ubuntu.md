@@ -11,7 +11,7 @@ comments: True
 # Intro
 Quick reference post for installing docker and jenkins on ubuntu server.
 
-# Set up Jenkins
+# install-jenkins.sh
 
 ```bash
 #!/usr/bin/env bash
