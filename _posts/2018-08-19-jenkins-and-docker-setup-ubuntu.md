@@ -47,3 +47,5 @@ sudo systemctl status docker
 echo "Adding Jenkins to docker group"
 sudo usermod -aG docker jenkins
 ```
+
+Now you're good to go setting up a docker pipeline!
