@@ -7,15 +7,34 @@ permalink: /about/
 
 ![avatar](../images/avatar-background.png){:height="50%" width="50%"}  
 
-# Bio
+* Systems Administrator/IT Specialist
+* Strong foundation in software design and systems development on multiple platforms
+* Familiar with agile and scrum practices focusing on UX driven development
+* Understanding of change control and incident management procedures
+* Experienced in administration for a variety of Linux Web and Middleware stacks
+* Experience with object oriented programming, testing, and deploying code
+* Able to containerize, deploy, and manage applications using Docker
+* Capable of creating, managing, and working on remote, virtual, and/or containerized systems
+* Experience with maintaining and automating distributed systems
+* Well versed in version control systems and code deployment pipelines
+* Open to travel, able to work remotely, and willing to work off business hours weekends/nights
 
-Much of my expertise derives from my love for all things electronic. I have a deep passion in my heart for learning new things involving computers and I actively seek out new and interesting open source tools and projects to further my knowledge. I have achieved a Bachelor of Science in Computer Information Systems degree at the University of Michigan. 
+# Education
+University of Michigan – Flint
+Bachelor of Science, Computer Information Systems: Business Information Systems
 
-I have had an active education in the various forms of programming languages including (but not limited to) COBOL, C++, Python, Java, Android, HTML, JavaScript, and CSS. As well as the usage of a wide range of computer systems and applications. I also spend a huge amount of my free time trying out and contributing back to a variety of open source projects on GitHub.
+# Languages
+Bash, Python, Java, Golang, SQL, HTML, JavaScript, CSS, Markdown, UML
 
-I am currently working as an Associate Systems Administrator with Flagstar Bank. This roll has taught me a great deal about working within small agile dev ops teams to maintain Unix hosted web application servers and tools. My experiences and tasks are varied. I have worked with teams to create deploy pipelines for shared bash script libraries and web application configuration files using BitBucket, Rundeck, and Bash/CURL scripts to query APIs on both. I have integrated and configured LDAP login for a variety of web applications and tools. I support in generating SSL certificates and supporting the user in the installation of these certificates ensuring that they are available in the correct format. Developed proof of concept applications in Angular2. Helped to set up and support Mule Enterprise Service Bus, Rundeck job execution tool, and a variety of other AdHoc IT initiatives where I am needed.
+# Technologies
+Linux Systems (Debian and Redhat), Git, HTTPS/OpenSSL/PKI, SSH, Docker, Tomcat, HTTPD, AMQ, Mule ESB, CRON Scheduling, Tidal workload automation, Rundeck systems orchestration, Wordpress, Actimize, Microsoft Office Suite, Networking technology and troubleshooting
+ 
+# Experience
+## Flagstar Bank, Associate Systems Administrator – Summer 2016 – Current
+Provide operational and engineering support to development groups. Maintain and perform analysis and troubleshooting on production Linux systems. Manage JMS messaging queues. Maintaining and monitoring PKI and HTTPS endpoints. Configuring and developing solutions for a variety of web based technology stacks including in house built as well as vendor provided applications. Manage relationships with other internal working groups and communicate procedures as well as complex concepts in order to provide satisfactory solutions. 
 
-I have worked as an Advance Repair Agent for Geek Squad. In this roll I was primarily tasked with troubleshooting and repairing end-user devices that are checked in for more technical repairs and services that cannot be performed within 24 hours. On a daily basis I removed malicious applications, troubleshooted and repaired faulty software and malfunctioning hardware, and performed data backup and recovery services. I was also asked to support users in software installation and setup as well as educating end users of proper care and use for their gadgets. Secondary duties include shipping and receiving parts and client devices, book keeping for internal business processes and metrics, as well as legal and technical paperwork. This roll has given me the opportunity to master working on a small team to maintain internal operations of an IT help desk and provide exceptional customer service in a highly technical and complex, time sensitive, environment.
+## Geek Squad, Advanced Repair Agent – February 2015 – August 2016
+Work mostly in a self-directed environment to perform advanced diagnostics, troubleshooting, and repairs for complex technology issues as well as providing end user support via in person or phone interaction. Repairs include but are not limited to: Installing, troubleshooting, and replacing any malfunctioning internal components. Troubleshooting and resolving software and operating system related issues including: Malware removal, software installation, networking, operating system restore, data backup, recovery, and end user education.
 
 * [LinkedIn](https://www.linkedin.com/pub/fredrick-paulin/90/258/978)
 
