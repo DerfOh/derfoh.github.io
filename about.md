@@ -30,10 +30,13 @@ Bash, Python, Java, Golang, SQL, HTML, JavaScript, CSS, Markdown, UML
 Linux Systems (Debian and Redhat), Git, HTTPS/OpenSSL/PKI, SSH, Docker, Tomcat, HTTPD, AMQ, Mule ESB, CRON Scheduling, Tidal workload automation, Rundeck systems orchestration, Wordpress, Actimize, Microsoft Office Suite, Networking technology and troubleshooting
  
 # Experience
+
 *Flagstar Bank, Associate Systems Administrator – Summer 2016 – Current*
+
 Provide operational and engineering support to development groups. Maintain and perform analysis and troubleshooting on production Linux systems. Manage JMS messaging queues. Maintaining and monitoring PKI and HTTPS endpoints. Configuring and developing solutions for a variety of web based technology stacks including in house built as well as vendor provided applications. Manage relationships with other internal working groups and communicate procedures as well as complex concepts in order to provide satisfactory solutions. 
 
 *Geek Squad, Advanced Repair Agent – February 2015 – August 2016*
+
 Work mostly in a self-directed environment to perform advanced diagnostics, troubleshooting, and repairs for complex technology issues as well as providing end user support via in person or phone interaction. Repairs include but are not limited to: Installing, troubleshooting, and replacing any malfunctioning internal components. Troubleshooting and resolving software and operating system related issues including: Malware removal, software installation, networking, operating system restore, data backup, recovery, and end user education.
 
 * [LinkedIn](https://www.linkedin.com/pub/fredrick-paulin/90/258/978)
