@@ -9,15 +9,16 @@ permalink: /about/
 
 * Systems Administrator/IT Specialist
 * Strong foundation in software design and systems development on multiple platforms
-* Familiar with agile and scrum practices focusing on UX driven development
+* Familiar with agile and scrum practices focusing on UX driven software development
+* Foundational understanding of object oriented software development
 * Understanding of change control and incident management procedures
-* Experienced in administration for a variety of Linux Web and Middleware stacks
-* Experience with object oriented programming, testing, and deploying code
+* Experienced in administration for a variety of Linux Web and Middleware platforms
 * Able to containerize, deploy, and manage applications using Docker
 * Capable of creating, managing, and working on remote, virtual, and/or containerized systems
-* Experience with maintaining and automating distributed systems
-* Well versed in version control systems and code deployment pipelines
-* Open to travel, able to work remotely, and willing to work off business hours weekends/nights
+* Experience with maintaining, scripting, and automating distributed systems
+* Well versed in version control systems and application deployment pipelines
+* Familiar with active directory groups and user structure and configuration of ldap/saml connections
+
 
 # Education
 University of Michigan – Flint
@@ -27,7 +28,7 @@ Bachelor of Science, Computer Information Systems: Business Information Systems
 Bash, Python, Java, Golang, SQL, HTML, JavaScript, CSS, Markdown, UML
 
 # Technologies
-Linux Systems (Debian and Redhat), Git, HTTPS/OpenSSL/PKI, SSH, Docker, Tomcat, HTTPD, AMQ, Mule ESB, CRON Scheduling, Tidal workload automation, Rundeck systems orchestration, Wordpress, Actimize, Microsoft Office Suite, Networking technology and troubleshooting
+Linux Systems (Debian and Redhat), Git, HTTPS/OpenSSL/PKI, SSH, Docker, Tomcat, HTTPD, ActiveMQ, Mule ESB, Tidal/cron scheduling, Rundeck systems orchestration, Wordpress, Active Directory, LDAP, Microsoft Office Suite
  
 # Experience
 
