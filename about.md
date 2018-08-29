@@ -7,6 +7,8 @@ permalink: /about/
 
 ![avatar](../images/avatar-background.png){:height="50%" width="50%"}  
 
+---
+
 * Systems Administrator/IT Specialist
 * Strong foundation in software design and systems development on multiple platforms
 * Familiar with agile and scrum practices focusing on UX driven software development
